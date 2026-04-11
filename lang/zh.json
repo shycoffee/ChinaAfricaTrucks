@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "中非卡车 | 优质卡车出口平台",
+    "description": "您可信赖的中国至非洲卡车和挂车出口平台。多家认证工厂，具有竞争力的价格，可靠的运输服务。",
+    "keywords": "中国卡车, 非洲出口, 挂车, 平板车, 油罐车, 自卸车, 半挂车, 物流"
+  },
+  "nav": {
+    "home": "首页",
+    "factories": "合作工厂",
+    "products": "产品中心",
+    "categories": "产品分类",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "language": "English"
+  },
+  "hero": {
+    "title": "中国优质卡车和挂车出口平台",
+    "subtitle": "连接非洲企业与中国认证制造商",
+    "cta_primary": "浏览产品",
+    "cta_secondary": "查看工厂",
+    "stats": {
+      "factories": "合作工厂",
+      "products": "产品类型",
+      "countries": "服务国家",
+      "experience": "行业经验"
+    }
+  },
+  "factories": {
+    "title": "我们的合作工厂",
+    "subtitle": "精心挑选的中国工业带认证制造商",
+    "view_all": "查看全部工厂",
+    "tongya": {
+      "name": "通亚重工",
+      "location": "山东梁山",
+      "specialty": "半挂车和油罐车",
+      "description": "领先的挂车制造商，专业生产平板车、低平板车、油罐车和自卸车，拥有20年以上经验。",
+      "established": "成立于2003年",
+      "certification": "ISO 9001, CCC认证"
+    }
+  },
+  "categories": {
+    "title": "产品分类",
+    "subtitle": "全面的商用车和挂车产品系列",
+    "flatbed": {
+      "name": "平板挂车",
+      "description": "20英尺、40英尺、45英尺集装箱挂车，多种车轴配置"
+    },
+    "lowbed": {
+      "name": "低平板挂车",
+      "description": "重型低平板车，适用于工程机械和矿山设备运输"
+    },
+    "tanker": {
+      "name": "油罐挂车",
+      "description": "燃油、化工和食品级液体运输解决方案"
+    },
+    "dump": {
+      "name": "自卸挂车",
+      "description": "后翻、侧翻和底卸多种配置"
+    },
+    "cargo": {
+      "name": "载货车",
+      "description": "轻型、中型和重型载货车辆"
+    },
+    "tractor": {
+      "name": "牵引车头",
+      "description": "4x2、6x4、6x2牵引车头，来自领先品牌"
+    }
+  },
+  "features": {
+    "title": "为什么选择我们",
+    "factory_direct": {
+      "title": "工厂直供价格",
+      "description": "跳过中间商，直接与认证制造商交易，获得最优价格。"
+    },
+    "quality": {
+      "title": "质量保证",
+      "description": "所有产品符合国际标准，提供完整认证和检验报告。"
+    },
+    "logistics": {
+      "title": "全程物流",
+      "description": "从工厂到港口再到目的地，我们处理所有运输和文件。"
+    },
+    "support": {
+      "title": "本地支持",
+      "description": "在非洲主要城市设有合作伙伴和服务中心，提供售后支持。"
+    }
+  },
+  "process": {
+    "title": "服务流程",
+    "steps": {
+      "inquiry": {
+        "title": "发送询盘",
+        "description": "告诉我们您的需求。我们的团队将在24小时内回复。"
+      },
+      "quote": {
+        "title": "获取报价",
+        "description": "接收包含规格、价格和运输选项的详细报价单。"
+      },
+      "production": {
+        "title": "生产制造",
+        "description": "工厂开始生产。提供定期更新和质量检验报告。"
+      },
+      "shipping": {
+        "title": "海运出口",
+        "description": "海运至您最近的港口。提供完整文件和清关支持。"
+      },
+      "delivery": {
+        "title": "交付验收",
+        "description": "接收您的车辆。本地支持可用于组装和培训。"
+      }
+    }
+  },
+  "markets": {
+    "title": "我们出口到",
+    "countries": ["尼日利亚", "肯尼亚", "加纳", "坦桑尼亚", "乌干达", "赞比亚", "南非", "埃塞俄比亚"]
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "准备进口？联系我们获取免费咨询和报价。",
+    "whatsapp": "WhatsApp",
+    "email": "电子邮件",
+    "phone": "电话",
+    "address": "办公地址",
+    "form": {
+      "name": "您的姓名",
+      "email": "电子邮箱",
+      "phone": "电话/WhatsApp",
+      "country": "所在国家",
+      "product": "感兴趣的产品",
+      "quantity": "所需数量",
+      "message": "其他需求",
+      "submit": "发送询盘",
+      "success": "感谢您的询盘！我们将在24小时内与您联系。"
+    }
+  },
+  "footer": {
+    "company": "中非卡车",
+    "tagline": "您可信赖的中国至非洲优质车辆进口合作伙伴。",
+    "quick_links": "快速链接",
+    "products": "产品中心",
+    "contact": "联系我们",
+    "copyright": "© 2024 中非卡车. 保留所有权利。"
+  }
+}

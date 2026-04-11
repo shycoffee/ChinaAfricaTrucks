@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "China Africa Trucks | Premium Trailer Export Platform",
+    "description": "Your trusted platform for exporting quality trucks and trailers from China to Africa. Multiple certified factories, competitive prices, reliable shipping.",
+    "keywords": "China trucks, Africa export, trailers, flatbed, tanker, dump truck, semi trailer, logistics"
+  },
+  "nav": {
+    "home": "Home",
+    "factories": "Our Factories",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About Us",
+    "contact": "Contact",
+    "language": "中文"
+  },
+  "hero": {
+    "title": "Your Gateway to China's Best Trucks & Trailers",
+    "subtitle": "Connecting African businesses with certified Chinese manufacturers",
+    "cta_primary": "Explore Products",
+    "cta_secondary": "View Factories",
+    "stats": {
+      "factories": "Partner Factories",
+      "products": "Product Types",
+      "countries": "Countries Served",
+      "experience": "Years Experience"
+    }
+  },
+  "factories": {
+    "title": "Our Partner Factories",
+    "subtitle": "Carefully selected certified manufacturers across China's industrial belt",
+    "view_all": "View All Factories",
+    "tongya": {
+      "name": "Tongya Heavy Industry",
+      "location": "Liangshan, Shandong",
+      "specialty": "Semi Trailers & Tankers",
+      "description": "Leading manufacturer specializing in flatbed trailers, lowbed trailers, fuel tankers, and dump trailers with 20+ years of experience.",
+      "established": "Established 2003",
+      "certification": "ISO 9001, CCC Certified"
+    }
+  },
+  "categories": {
+    "title": "Product Categories",
+    "subtitle": "Comprehensive range of commercial vehicles and trailers",
+    "flatbed": {
+      "name": "Flatbed Trailers",
+      "description": "20ft, 40ft, 45ft container trailers with multiple axle configurations"
+    },
+    "lowbed": {
+      "name": "Lowbed Trailers",
+      "description": "Heavy-duty trailers for construction and mining equipment transport"
+    },
+    "tanker": {
+      "name": "Tanker Trailers",
+      "description": "Fuel, chemical, and food-grade liquid transport solutions"
+    },
+    "dump": {
+      "name": "Dump Trailers",
+      "description": "Rear dump, side dump, and end dump configurations"
+    },
+    "cargo": {
+      "name": "Cargo Trucks",
+      "description": "Light, medium, and heavy-duty cargo vehicles"
+    },
+    "tractor": {
+      "name": "Tractor Heads",
+      "description": "4x2, 6x4, 6x2 tractor units from leading brands"
+    }
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "factory_direct": {
+      "title": "Factory Direct Prices",
+      "description": "Skip the middlemen. Deal directly with certified manufacturers for the best prices."
+    },
+    "quality": {
+      "title": "Quality Assured",
+      "description": "All products meet international standards with full certification and inspection reports."
+    },
+    "logistics": {
+      "title": "Complete Logistics",
+      "description": "From factory to port to your destination. We handle all shipping and documentation."
+    },
+    "support": {
+      "title": "Local Support",
+      "description": "Partners and service centers in major African cities for after-sales support."
+    }
+  },
+  "process": {
+    "title": "How It Works",
+    "steps": {
+      "inquiry": {
+        "title": "Send Inquiry",
+        "description": "Tell us what you need. Our team will respond within 24 hours."
+      },
+      "quote": {
+        "title": "Get Quote",
+        "description": "Receive detailed quotation with specifications, pricing, and shipping options."
+      },
+      "production": {
+        "title": "Production",
+        "description": "Factory begins production. Regular updates and quality inspections provided."
+      },
+      "shipping": {
+        "title": "Shipping",
+        "description": "Sea freight to your nearest port. Full documentation and customs support."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "description": "Receive your vehicles. Local support available for assembly and training."
+      }
+    }
+  },
+  "markets": {
+    "title": "We Export To",
+    "countries": ["Nigeria", "Kenya", "Ghana", "Tanzania", "Uganda", "Zambia", "South Africa", "Ethiopia"]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to import? Contact us for a free consultation and quotation.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Office Address",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone/WhatsApp",
+      "country": "Your Country",
+      "product": "Interested Product",
+      "quantity": "Quantity Needed",
+      "message": "Additional Requirements",
+      "submit": "Send Inquiry",
+      "success": "Thank you! We'll contact you within 24 hours."
+    }
+  },
+  "footer": {
+    "company": "China Africa Trucks",
+    "tagline": "Your trusted partner for importing quality vehicles from China to Africa.",
+    "quick_links": "Quick Links",
+    "products": "Products",
+    "contact": "Contact",
+    "copyright": "© 2024 China Africa Trucks. All rights reserved."
+  }
+}
