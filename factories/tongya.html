@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tongya Heavy Industry | China Africa Trucks</title>
+    <meta name="description" content="Tongya Heavy Industry - Leading manufacturer of semi trailers and tankers in Liangshan, China. 20+ years of experience exporting to Africa.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* Factory Page Specific Styles */
+        .factory-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 72px;
+        }
+        
+        .factory-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .factory-hero-text h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .factory-hero-text .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        
+        .factory-hero-text .description {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .factory-hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat .number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+        }
+        
+        .hero-stat .label {
+            opacity: 0.8;
+            font-size: 0.875rem;
+        }
+        
+        .factory-hero-image {
+            background: rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+        }
+        
+        .factory-hero-image i {
+            font-size: 8rem;
+            opacity: 0.3;
+        }
+        
+        /* Products Section */
+        .products-section {
+            padding: 4rem 0;
+        }
+        
+        .section-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--border-light);
+            overflow-x: auto;
+        }
+        
+        .tab-btn {
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .tab-btn:hover {
+            color: var(--primary);
+        }
+        
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .product-image {
+            height: 200px;
+            background: var(--bg-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-image .placeholder {
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.375rem 0.75rem;
+            background: var(--accent);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 2rem;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .spec-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--bg-gray);
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+        
+        .product-description {
+            color: var(--text-light);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        .product-actions .btn {
+            flex: 1;
+            text-align: center;
+        }
+        
+        /* Certifications Section */
+        .certifications-section {
+            background: var(--bg-gray);
+            padding: 4rem 0;
+        }
+        
+        .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .cert-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .cert-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .cert-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-card p {
+            color: var(--text-light);
+            font-size: 0.9375rem;
+        }
+        
+        /* Photo Gallery */
+        .gallery-section {
+            padding: 4rem 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 4/3;
+            background: var(--bg-gray);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-item .placeholder {
+            font-size: 3rem;
+            color: var(--text-muted);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .factory-hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .factory-hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .factory-hero-stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-tabs {
+                padding-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">China Africa</span>
+                        <span class="logo-sub">TRUCKS</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tongya.html" class="active">Factory</a></li>
+                        <li><a href="../index.html#products">Products</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <a href="https://wa.me/2348140067523" class="btn btn-primary btn-sm" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Factory Hero -->
+    <section class="factory-hero">
+        <div class="container">
+            <div class="factory-hero-content">
+                <div class="factory-hero-text">
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Liangshan, Shandong Province, China</span>
+                    </div>
+                    <h1>Tongya Heavy Industry</h1>
+                    <p class="description">
+                        Established in 2003, Tongya Heavy Industry is a leading manufacturer of semi-trailers and tankers 
+                        in China. With over 20 years of experience, we specialize in producing high-quality flatbed trailers, 
+                        lowbed trailers, fuel tankers, and dump trailers for the African market.
+                    </p>
+                    <div class="factory-hero-stats">
+                        <div class="hero-stat">
+                            <span class="number">20+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">5000+</span>
+                            <span class="label">Units Exported</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">30+</span>
+                            <span class="label">Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="factory-hero-image">
+                    <i class="fas fa-industry"></i>
+                    <p style="margin-top: 1rem; opacity: 0.7;">Factory Photo Placeholder</p>
+                    <p style="font-size: 0.875rem; opacity: 0.5;">Replace with actual factory image from www.chinatongya.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Comprehensive Trailer Solutions</h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
+                    All products manufactured by Tongya Heavy Industry with full quality certification
+                </p>
+            </div>
+            
+            <!-- Product Tabs -->
+            <div class="section-tabs">
+                <button class="tab-btn active" data-tab="flatbed">Flatbed Trailers</button>
+                <button class="tab-btn" data-tab="lowbed">Lowbed Trailers</button>
+                <button class="tab-btn" data-tab="tanker">Tanker Trailers</button>
+                <button class="tab-btn" data-tab="dump">Dump Trailers</button>
+            </div>
+            
+            <!-- Flatbed Trailers -->
+            <div class="tab-content active" id="flatbed">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Hot Sale</span>
+                            <div class="placeholder">
+                                <i class="fas fa-truck-flatbed"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>40ft Flatbed Trailer</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">60 Tons</span>
+                                <span class="spec-tag">Container Locks</span>
+                            </div>
+                            <p class="product-description">
+                                Standard 40ft flatbed trailer with 12 container locks, suitable for 20ft and 40ft containers.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-truck-flatbed"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>20ft Flatbed Trailer</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">2 Axles</span>
+                                <span class="spec-tag">40 Tons</span>
+                                <span class="spec-tag">Container Locks</span>
+                            </div>
+                            <p class="product-description">
+                                Compact 20ft flatbed trailer ideal for short-distance container transport.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-truck-flatbed"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>45ft Flatbed Trailer</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">70 Tons</span>
+                                <span class="spec-tag">Extra Long</span>
+                            </div>
+                            <p class="product-description">
+                                Extended flatbed trailer for 45ft containers and oversized cargo.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lowbed Trailers -->
+            <div class="tab-content" id="lowbed" style="display: none;">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Popular</span>
+                            <div class="placeholder">
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>60 Ton Lowbed Trailer</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">60 Tons</span>
+                                <span class="spec-tag">Hydraulic Ramp</span>
+                            </div>
+                            <p class="product-description">
+                                Heavy-duty lowbed trailer for construction equipment transport with hydraulic ramps.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>80 Ton Lowbed Trailer</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">4 Axles</span>
+                                <span class="spec-tag">80 Tons</span>
+                                <span class="spec-tag">Detachable Neck</span>
+                            </div>
+                            <p class="product-description">
+                                Extra heavy-duty lowbed with detachable gooseneck for easy loading.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tanker Trailers -->
+            <div class="tab-content" id="tanker" style="display: none;">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Best Seller</span>
+                            <div class="placeholder">
+                                <i class="fas fa-oil-can"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>45000L Fuel Tanker</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">45000L</span>
+                                <span class="spec-tag">6 Compartments</span>
+                            </div>
+                            <p class="product-description">
+                                High-capacity fuel tanker with multiple compartments for different fuel types.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-oil-can"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>30000L Diesel Tanker</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">2 Axles</span>
+                                <span class="spec-tag">30000L</span>
+                                <span class="spec-tag">4 Compartments</span>
+                            </div>
+                            <p class="product-description">
+                                Medium capacity tanker ideal for regional fuel distribution.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dump Trailers -->
+            <div class="tab-content" id="dump" style="display: none;">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-dumpster"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>40 Ton Rear Dump</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">40 Tons</span>
+                                <span class="spec-tag">U-Shape</span>
+                            </div>
+                            <p class="product-description">
+                                Standard U-shape rear dump trailer for construction and mining applications.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder">
+                                <i class="fas fa-dumpster"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>60 Ton Side Dump</h3>
+                            <div class="product-specs">
+                                <span class="spec-tag">3 Axles</span>
+                                <span class="spec-tag">60 Tons</span>
+                                <span class="spec-tag">Side Unload</span>
+                            </div>
+                            <p class="product-description">
+                                Side dump trailer for efficient unloading in confined spaces.
+                            </p>
+                            <div class="product-actions">
+                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-title">Quality Assurance</h2>
+            </div>
+            
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>ISO 9001:2015</h3>
+                    <p>Quality Management System certified for consistent product quality</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>CCC Certification</h3>
+                    <p>China Compulsory Certification for vehicle safety standards</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Bureau Veritas</h3>
+                    <p>Third-party inspection and certification by global leader</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-award"></i>
+                    <h3>SGS Certified</h3>
+                    <p>Independent testing and certification services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory Photos -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Factory Gallery</span>
+                <h2 class="section-title">Manufacturing Facility</h2>
+                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
+                    Modern production facility with advanced equipment and quality control
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: var(--bg-gray); border-radius: 1rem;">
+                <i class="fas fa-info-circle" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem;"></i>
+                <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+                    <strong>Photo Upload Guide:</strong> Replace placeholder icons with real factory photos from www.chinatongya.com.
+                    Recommended: Factory exterior, production line, welding workshop, painting booth, finished products yard.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark" style="background: linear-gradient(135deg, #1e3a8a, #1e40af);">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Order from Tongya?</h2>
+            <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 2rem;">
+                Contact us for factory-direct pricing, production timeline, and shipping arrangements to your destination.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn-primary" style="background: white; color: var(--primary);">
+                    <i class="fas fa-envelope"></i>
+                    Send Inquiry
+                </a>
+                <a href="https://wa.me/2348140067523" class="btn btn-outline" target="_blank" style="border-color: white; color: white;">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo" style="color: white;">
+                        <div class="logo-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">China Africa</span>
+                            <span class="logo-sub">TRUCKS</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">
+                        Your trusted partner for importing quality trucks and trailers from Tongya Heavy Industry to Africa.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="tongya.html">Factory</a></li>
+                        <li><a href="../index.html#products">Products</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products" onclick="showTab('flatbed')">Flatbed Trailers</a></li>
+                        <li><a href="#products" onclick="showTab('lowbed')">Lowbed Trailers</a></li>
+                        <li><a href="#products" onclick="showTab('tanker')">Tanker Trailers</a></li>
+                        <li><a href="#products" onclick="showTab('dump')">Dump Trailers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/2348140067523">+234 814 006 7523</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:chinaafricatrucks@gmail.com">chinaafricatrucks@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Liangshan, Shandong, China</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 China Africa Trucks. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2348140067523" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName).style.display = 'block';
+            
+            // Add active class to clicked button
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+        }
+        
+        // Tab button click handlers
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                showTab(tabName);
+            });
+        });
+    </script>
+</body>
+</html>
