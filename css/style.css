@@ -582,6 +582,17 @@ p {
     gap: 2rem;
 }
 
+/* Single factory layout - center the card */
+.factories-grid:has(> :only-child) {
+    grid-template-columns: minmax(350px, 800px);
+    justify-content: center;
+}
+
+.factories-grid > :only-child {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .factory-card {
     background: white;
     border-radius: var(--radius-xl);
