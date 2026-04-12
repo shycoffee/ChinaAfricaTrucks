@@ -1,541 +1,500 @@
-     1|     1|     1|     1|<!DOCTYPE html>
-     2|     2|     2|     2|<html lang="en">
-     3|     3|     3|     3|<head>
-     4|     4|     4|     4|    <meta charset="UTF-8">
-     5|     5|     5|     5|    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     6|     6|     6|     6|    <title>Tongya Heavy Industry | China Africa Trucks</title>
-     7|     7|     7|     7|    <meta name="description" content="Tongya Heavy Industry - Leading manufacturer of semi trailers and tankers in Liangshan, China. 20+ years of experience exporting to Africa.">
-     8|     8|     8|     8|    
-     9|     9|     9|     9|    <!-- Fonts -->
-    10|    10|    10|    10|    <link rel="preconnect" href="https://fonts.googleapis.com">
-    11|    11|    11|    11|    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    12|    12|    12|    12|    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    13|    13|    13|    13|    
-    14|    14|    14|    14|    <!-- Icons -->
-    15|    15|    15|    15|    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    16|    16|    16|    16|    
-    17|    17|    17|    17|    <!-- Styles -->
-    18|    18|    18|    18|    <link rel="stylesheet" href="../css/style.css">
-    19|    19|    19|    19|    
-    20|    20|    20|    20|    <style>
-    21|    21|    21|    21|        /* Factory Page Specific Styles */
-    22|    22|    22|    22|        .factory-hero {
-    23|    23|    23|    23|            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-    24|    24|    24|    24|            color: white;
-    25|    25|    25|    25|            padding: 8rem 0 4rem;
-    26|    26|    26|    26|            margin-top: 72px;
-    27|    27|    27|    27|        }
-    28|    28|    28|    28|        
-    29|    29|    29|    29|        .factory-hero-content {
-    30|    30|    30|    30|            display: grid;
-    31|    31|    31|    31|            grid-template-columns: 1fr 1fr;
-    32|    32|    32|    32|            gap: 4rem;
-    33|    33|    33|    33|            align-items: center;
-    34|    34|    34|    34|        }
-    35|    35|    35|    35|        
-    36|    36|    36|    36|        .factory-hero-text h1 {
-    37|    37|    37|    37|            color: white;
-    38|    38|    38|    38|            font-size: 3rem;
-    39|    39|    39|    39|            margin-bottom: 1rem;
-    40|    40|    40|    40|        }
-    41|    41|    41|    41|        
-    42|    42|    42|    42|        .factory-hero-text .location {
-    43|    43|    43|    43|            display: flex;
-    44|    44|    44|    44|            align-items: center;
-    45|    45|    45|    45|            gap: 0.5rem;
-    46|    46|    46|    46|            opacity: 0.9;
-    47|    47|    47|    47|            margin-bottom: 1.5rem;
-    48|    48|    48|    48|        }
-    49|    49|    49|    49|        
-    50|    50|    50|    50|        .factory-hero-text .description {
-    51|    51|    51|    51|            font-size: 1.125rem;
-    52|    52|    52|    52|            line-height: 1.8;
-    53|    53|    53|    53|            opacity: 0.9;
-    54|    54|    54|    54|            margin-bottom: 2rem;
-    55|    55|    55|    55|        }
-    56|    56|    56|    56|        
-    57|    57|    57|    57|        .factory-hero-stats {
-    58|    58|    58|    58|            display: grid;
-    59|    59|    59|    59|            grid-template-columns: repeat(3, 1fr);
-    60|    60|    60|    60|            gap: 2rem;
-    61|    61|    61|    61|            margin-top: 2rem;
-    62|    62|    62|    62|        }
-    63|    63|    63|    63|        
-    64|    64|    64|    64|        .hero-stat {
-    65|    65|    65|    65|            text-align: center;
-    66|    66|    66|    66|        }
-    67|    67|    67|    67|        
-    68|    68|    68|    68|        .hero-stat .number {
-    69|    69|    69|    69|            font-size: 2.5rem;
-    70|    70|    70|    70|            font-weight: 800;
-    71|    71|    71|    71|            display: block;
-    72|    72|    72|    72|        }
-    73|    73|    73|    73|        
-    74|    74|    74|    74|        .hero-stat .label {
-    75|    75|    75|    75|            opacity: 0.8;
-    76|    76|    76|    76|            font-size: 0.875rem;
-    77|    77|    77|    77|        }
-    78|    78|    78|    78|        
-    79|    79|    79|    79|        .factory-hero-image {
-    80|    80|    80|    80|            background: rgba(255,255,255,0.1);
-    81|    81|    81|    81|            border-radius: 1rem;
-    82|    82|    82|    82|            padding: 3rem;
-    83|    83|    83|    83|            text-align: center;
-    84|    84|    84|    84|        }
-    85|    85|    85|    85|        
-    86|    86|    86|    86|        .factory-hero-image i {
-    87|    87|    87|    87|            font-size: 8rem;
-    88|    88|    88|    88|            opacity: 0.3;
-    89|    89|    89|    89|        }
-    90|    90|    90|    90|        
-    91|    91|    91|    91|        /* Products Section */
-    92|    92|    92|    92|        .products-section {
-    93|    93|    93|    93|            padding: 4rem 0;
-    94|    94|    94|    94|        }
-    95|    95|    95|    95|        
-    96|    96|    96|    96|        .section-tabs {
-    97|    97|    97|    97|            display: flex;
-    98|    98|    98|    98|            gap: 0.5rem;
-    99|    99|    99|    99|            margin-bottom: 2rem;
-   100|   100|   100|   100|            border-bottom: 2px solid var(--border-light);
-   101|   101|   101|   101|            overflow-x: auto;
-   102|   102|   102|   102|        }
-   103|   103|   103|   103|        
-   104|   104|   104|   104|        .tab-btn {
-   105|   105|   105|   105|            padding: 1rem 1.5rem;
-   106|   106|   106|   106|            background: none;
-   107|   107|   107|   107|            border: none;
-   108|   108|   108|   108|            font-size: 1rem;
-   109|   109|   109|   109|            font-weight: 600;
-   110|   110|   110|   110|            color: var(--text-light);
-   111|   111|   111|   111|            cursor: pointer;
-   112|   112|   112|   112|            border-bottom: 3px solid transparent;
-   113|   113|   113|   113|            transition: all 0.3s;
-   114|   114|   114|   114|            white-space: nowrap;
-   115|   115|   115|   115|        }
-   116|   116|   116|   116|        
-   117|   117|   117|   117|        .tab-btn:hover {
-   118|   118|   118|   118|            color: var(--primary);
-   119|   119|   119|   119|        }
-   120|   120|   120|   120|        
-   121|   121|   121|   121|        .tab-btn.active {
-   122|   122|   122|   122|            color: var(--primary);
-   123|   123|   123|   123|            border-bottom-color: var(--primary);
-   124|   124|   124|   124|        }
-   125|   125|   125|   125|        
-   126|   126|   126|   126|        .products-grid {
-   127|   127|   127|   127|            display: grid;
-   128|   128|   128|   128|            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   129|   129|   129|   129|            gap: 2rem;
-   130|   130|   130|   130|        }
-   131|   131|   131|   131|        
-   132|   132|   132|   132|        .product-card {
-   133|   133|   133|   133|            background: white;
-   134|   134|   134|   134|            border-radius: 1rem;
-   135|   135|   135|   135|            overflow: hidden;
-   136|   136|   136|   136|            box-shadow: var(--shadow-md);
-   137|   137|   137|   137|            transition: all 0.3s;
-   138|   138|   138|   138|        }
-   139|   139|   139|   139|        
-   140|   140|   140|   140|        .product-card:hover {
-   141|   141|   141|   141|            transform: translateY(-8px);
-   142|   142|   142|   142|            box-shadow: var(--shadow-xl);
-   143|   143|   143|   143|        }
-   144|   144|   144|   144|        
-   145|   145|   145|   145|        .product-image {
-   146|   146|   146|   146|            height: 200px;
-   147|   147|   147|   147|            background: var(--bg-gray);
-   148|   148|   148|   148|            display: flex;
-   149|   149|   149|   149|            align-items: center;
-   150|   150|   150|   150|            justify-content: center;
-   151|   151|   151|   151|            position: relative;
-   152|   152|   152|   152|        }
-   153|   153|   153|   153|        
-   154|   154|   154|   154|        .product-image img {
-   155|   155|   155|   155|            width: 100%;
-   156|   156|   156|   156|            height: 100%;
-   157|   157|   157|   157|            object-fit: cover;
-   158|   158|   158|   158|        }
-   159|   159|   159|   159|        
-   160|   160|   160|   160|        .product-image .placeholder {
-   161|   161|   161|   161|            font-size: 4rem;
-   162|   162|   162|   162|            color: var(--primary);
-   163|   163|   163|   163|            opacity: 0.3;
-   164|   164|   164|   164|        }
-   165|   165|   165|   165|        
-   166|   166|   166|   166|        .product-badge {
-   167|   167|   167|   167|            position: absolute;
-   168|   168|   168|   168|            top: 1rem;
-   169|   169|   169|   169|            left: 1rem;
-   170|   170|   170|   170|            padding: 0.375rem 0.75rem;
-   171|   171|   171|   171|            background: var(--accent);
-   172|   172|   172|   172|            color: white;
-   173|   173|   173|   173|            font-size: 0.75rem;
-   174|   174|   174|   174|            font-weight: 600;
-   175|   175|   175|   175|            border-radius: 2rem;
-   176|   176|   176|   176|        }
-   177|   177|   177|   177|        
-   178|   178|   178|   178|        .product-content {
-   179|   179|   179|   179|            padding: 1.5rem;
-   180|   180|   180|   180|        }
-   181|   181|   181|   181|        
-   182|   182|   182|   182|        .product-content h3 {
-   183|   183|   183|   183|            font-size: 1.25rem;
-   184|   184|   184|   184|            margin-bottom: 0.5rem;
-   185|   185|   185|   185|        }
-   186|   186|   186|   186|        
-   187|   187|   187|   187|        .product-specs {
-   188|   188|   188|   188|            display: flex;
-   189|   189|   189|   189|            flex-wrap: wrap;
-   190|   190|   190|   190|            gap: 0.5rem;
-   191|   191|   191|   191|            margin-bottom: 1rem;
-   192|   192|   192|   192|        }
-   193|   193|   193|   193|        
-   194|   194|   194|   194|        .spec-tag {
-   195|   195|   195|   195|            padding: 0.25rem 0.75rem;
-   196|   196|   196|   196|            background: var(--bg-gray);
-   197|   197|   197|   197|            border-radius: 1rem;
-   198|   198|   198|   198|            font-size: 0.75rem;
-   199|   199|   199|   199|            color: var(--text-light);
-   200|   200|   200|   200|        }
-   201|   201|   201|   201|        
-   202|   202|   202|   202|        .product-description {
-   203|   203|   203|   203|            color: var(--text-light);
-   204|   204|   204|   204|            font-size: 0.9375rem;
-   205|   205|   205|   205|            line-height: 1.6;
-   206|   206|   206|   206|            margin-bottom: 1rem;
-   207|   207|   207|   207|        }
-   208|   208|   208|   208|        
-   209|   209|   209|   209|        .product-actions {
-   210|   210|   210|   210|            display: flex;
-   211|   211|   211|   211|            gap: 0.75rem;
-   212|   212|   212|   212|        }
-   213|   213|   213|   213|        
-   214|   214|   214|   214|        .product-actions .btn {
-   215|   215|   215|   215|            flex: 1;
-   216|   216|   216|   216|            text-align: center;
-   217|   217|   217|   217|        }
-   218|   218|   218|   218|        
-   219|   219|   219|   219|        /* Certifications Section */
-   220|   220|   220|   220|        .certifications-section {
-   221|   221|   221|   221|            background: var(--bg-gray);
-   222|   222|   222|   222|            padding: 4rem 0;
-   223|   223|   223|   223|        }
-   224|   224|   224|   224|        
-   225|   225|   225|   225|        .certs-grid {
-   226|   226|   226|   226|            display: grid;
-   227|   227|   227|   227|            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   228|   228|   228|   228|            gap: 2rem;
-   229|   229|   229|   229|        }
-   230|   230|   230|   230|        
-   231|   231|   231|   231|        .cert-card {
-   232|   232|   232|   232|            background: white;
-   233|   233|   233|   233|            padding: 2rem;
-   234|   234|   234|   234|            border-radius: 1rem;
-   235|   235|   235|   235|            text-align: center;
-   236|   236|   236|   236|            box-shadow: var(--shadow-sm);
-   237|   237|   237|   237|        }
-   238|   238|   238|   238|        
-   239|   239|   239|   239|        .cert-card i {
-   240|   240|   240|   240|            font-size: 3rem;
-   241|   241|   241|   241|            color: var(--primary);
-   242|   242|   242|   242|            margin-bottom: 1rem;
-   243|   243|   243|   243|        }
-   244|   244|   244|   244|        
-   245|   245|   245|   245|        .cert-card h3 {
-   246|   246|   246|   246|            font-size: 1.125rem;
-   247|   247|   247|   247|            margin-bottom: 0.5rem;
-   248|   248|   248|   248|        }
-   249|   249|   249|   249|        
-   250|   250|   250|   250|        .cert-card p {
-   251|   251|   251|   251|            color: var(--text-light);
-   252|   252|   252|   252|            font-size: 0.9375rem;
-   253|   253|   253|   253|        }
-   254|   254|   254|   254|        
-   255|   255|   255|   255|        /* Photo Gallery */
-   256|   256|   256|   256|        .gallery-section {
-   257|   257|   257|   257|            padding: 4rem 0;
-   258|   258|   258|   258|        }
-   259|   259|   259|   259|        
-   260|   260|   260|   260|        .gallery-grid {
-   261|   261|   261|   261|            display: grid;
-   262|   262|   262|   262|            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-   263|   263|   263|   263|            gap: 1rem;
-   264|   264|   264|   264|        }
-   265|   265|   265|   265|        
-   266|   266|   266|   266|        .gallery-item {
-   267|   267|   267|   267|            aspect-ratio: 4/3;
-   268|   268|   268|   268|            background: var(--bg-gray);
-   269|   269|   269|   269|            border-radius: 0.5rem;
-   270|   270|   270|   270|            overflow: hidden;
-   271|   271|   271|   271|            display: flex;
-   272|   272|   272|   272|            align-items: center;
-   273|   273|   273|   273|            justify-content: center;
-   274|   274|   274|   274|        }
-   275|   275|   275|   275|        
-   276|   276|   276|   276|        .gallery-item img {
-   277|   277|   277|   277|            width: 100%;
-   278|   278|   278|   278|            height: 100%;
-   279|   279|   279|   279|            object-fit: cover;
-   280|   280|   280|   280|        }
-   281|   281|   281|   281|        
-   282|   282|   282|   282|        .gallery-item .placeholder {
-   283|   283|   283|   283|            font-size: 3rem;
-   284|   284|   284|   284|            color: var(--text-muted);
-   285|   285|   285|   285|        }
-   286|   286|   286|   286|        
-   287|   287|   287|   287|        /* Responsive */
-   288|   288|   288|   288|        @media (max-width: 768px) {
-   289|   289|   289|   289|            .factory-hero-content {
-   290|   290|   290|   290|                grid-template-columns: 1fr;
-   291|   291|   291|   291|                gap: 2rem;
-   292|   292|   292|   292|            }
-   293|   293|   293|   293|            
-   294|   294|   294|   294|            .factory-hero-text h1 {
-   295|   295|   295|   295|                font-size: 2rem;
-   296|   296|   296|   296|            }
-   297|   297|   297|   297|            
-   298|   298|   298|   298|            .factory-hero-stats {
-   299|   299|   299|   299|                grid-template-columns: 1fr;
-   300|   300|   300|   300|                gap: 1rem;
-   301|   301|   301|   301|            }
-   302|   302|   302|   302|            
-   303|   303|   303|   303|            .products-grid {
-   304|   304|   304|   304|                grid-template-columns: 1fr;
-   305|   305|   305|   305|            }
-   306|   306|   306|   306|            
-   307|   307|   307|   307|            .section-tabs {
-   308|   308|   308|   308|                padding-bottom: 0.5rem;
-   309|   309|   309|   309|            }
-   310|   310|   310|   310|        }
-   311|   311|   311|   311|    </style>
-   312|   312|   312|   312|</head>
-   313|   313|   313|   313|<body>
-   314|   314|   314|   314|    <!-- Navigation -->
-   315|   315|   315|   315|    <nav class="navbar" id="navbar">
-   316|   316|   316|   316|        <div class="container">
-   317|   317|   317|   317|            <div class="nav-wrapper">
-   318|   318|   318|   318|                <a href="../index.html" class="logo">
-   319|   319|   319|   319|                    <div class="logo-icon">
-   320|   320|   320|   320|                        <i class="fas fa-truck"></i>
-   321|   321|   321|   321|                    </div>
-   322|   322|   322|   322|                    <div class="logo-text">
-   323|   323|   323|   323|                        <span class="logo-main">China Africa</span>
-   324|   324|   324|   324|                        <span class="logo-sub">TRUCKS</span>
-   325|   325|   325|   325|                    </div>
-   326|   326|   326|   326|                </a>
-   327|   327|   327|   327|                
-   328|   328|   328|   328|                <div class="nav-menu" id="navMenu">
-   329|   329|   329|   329|                    <ul class="nav-links">
-   330|   330|   330|   330|                        <li><a href="../index.html">Home</a></li>
-   331|   331|   331|   331|                        <li><a href="tongya.html" class="active">Factory</a></li>
-   332|   332|   332|   332|                        <li><a href="../index.html#products">Products</a></li>
-   333|   333|   333|   333|                        <li><a href="../index.html#contact">Contact</a></li>
-   334|   334|   334|   334|                    </ul>
-   335|   335|   335|   335|                    
-   336|   336|   336|   336|                    <div class="nav-actions">
-   337|   337|   337|   337|                        <a href="https://wa.me/2348140067523" class="btn btn-primary btn-sm" target="_blank">
-   338|   338|   338|   338|                            <i class="fab fa-whatsapp"></i>
-   339|   339|   339|   339|                            <span>WhatsApp</span>
-   340|   340|   340|   340|                        </a>
-   341|   341|   341|   341|                    </div>
-   342|   342|   342|   342|                </div>
-   343|   343|   343|   343|                
-   344|   344|   344|   344|                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-   345|   345|   345|   345|                    <span></span>
-   346|   346|   346|   346|                    <span></span>
-   347|   347|   347|   347|                    <span></span>
-   348|   348|   348|   348|                </button>
-   349|   349|   349|   349|            </div>
-   350|   350|   350|   350|        </div>
-   351|   351|   351|   351|    </nav>
-   352|   352|   352|   352|
-   353|   353|   353|   353|    <!-- Factory Hero -->
-   354|   354|   354|   354|    <section class="factory-hero">
-   355|   355|   355|   355|        <div class="container">
-   356|   356|   356|   356|            <div class="factory-hero-content">
-   357|   357|   357|   357|                <div class="factory-hero-text">
-   358|   358|   358|   358|                    <div class="location">
-   359|   359|   359|   359|                        <i class="fas fa-map-marker-alt"></i>
-   360|   360|   360|   360|                        <span>Liangshan, Shandong Province, China</span>
-   361|   361|   361|   361|                    </div>
-   362|   362|   362|   362|                    <h1>Tongya Heavy Industry</h1>
-   363|   363|   363|   363|                    <p class="description">
-   364|   364|   364|   364|                        Established in 2003, Tongya Heavy Industry is a leading manufacturer of semi-trailers and tankers 
-   365|   365|   365|   365|                        in China. With over 20 years of experience, we specialize in producing high-quality flatbed trailers, 
-   366|   366|   366|   366|                        lowbed trailers, fuel tankers, and dump trailers for the African market.
-   367|   367|   367|   367|                    </p>
-   368|   368|   368|   368|                    <div class="factory-hero-stats">
-   369|   369|   369|   369|                        <div class="hero-stat">
-   370|   370|   370|   370|                            <span class="number">20+</span>
-   371|   371|   371|   371|                            <span class="label">Years Experience</span>
-   372|   372|   372|   372|                        </div>
-   373|   373|   373|   373|                        <div class="hero-stat">
-   374|   374|   374|   374|                            <span class="number">5000+</span>
-   375|   375|   375|   375|                            <span class="label">Units Exported</span>
-   376|   376|   376|   376|                        </div>
-   377|   377|   377|   377|                        <div class="hero-stat">
-   378|   378|   378|   378|                            <span class="number">30+</span>
-   379|   379|   379|   379|                            <span class="label">Countries Served</span>
-   380|   380|   380|   380|                        </div>
-   381|   381|   381|   381|                    </div>
-   382|   382|   382|   382|                </div>
-   383|   383|   383|   383|                <div class="factory-hero-image">
-   384|   384|   384|   384|                    <img src="../assets/images/tongya-factory.jpg" alt="Tongya Heavy Industry Factory" style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem;">
-   385|   385|   385|   385|                </div>
-   386|   386|   386|   386|            </div>
-   387|   387|   387|   387|        </div>
-   388|   388|   388|   388|    </section
-    <!-- Factory Photos -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Factory Gallery</span>
-                <h2 class="section-title">Manufacturing Facility</h2>
-                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
-                    Modern production facility with advanced equipment and quality control
-                </p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="../assets/images/detail-1.jpg" alt="Factory Detail 1" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="../assets/images/detail-2.jpg" alt="Factory Detail 2" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="../assets/images/dump-trailer-1.jpg" alt="Product 1" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="../assets/images/dump-trailer-2.jpg" alt="Product 2" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="../assets/images/dump-trailer-3.jpg" alt="Product 3" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="../assets/images/dump-trailer-4.jpg" alt="Product 4" loading="lazy">
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: var(--bg-gray); border-radius: 1rem;">
-                <i class="fas fa-info-circle" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem;"></i>
-                <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
-                    <strong>Real Tongya Factory Photos:</strong> These are actual images from Tongya Heavy Industry showing their manufacturing quality and product range.
-                </p>
-            </div>
-        </div>
-    </section>>
-   389|   389|   389|   389|
-   390|   390|   390|   390|    <!-- Products Section -->
-   391|   391|   391|   391|    <section class="products-section" id="products">
-   392|   392|   392|   392|        <div class="container">
-   393|   393|   393|   393|            <div class="section-header">
-   394|   394|   394|   394|                <span class="section-tag">Our Products</span>
-   395|   395|   395|   395|                <h2 class="section-title">Comprehensive Trailer Solutions</h2>
-   396|   396|   396|   396|                <p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
-   397|   397|   397|   397|                    All products manufactured by Tongya Heavy Industry with full quality certification
-   398|   398|   398|   398|                </p>
-   399|   399|   399|   399|            </div>
-   400|   400|   400|   400|            
-   401|   401|   401|   401|            <!-- Product Tabs -->
-   402|   402|   402|   402|            <div class="section-tabs">
-   403|   403|   403|   403|                <button class="tab-btn active" data-tab="flatbed">Flatbed Trailers</button>
-   404|   404|   404|   404|                <button class="tab-btn" data-tab="lowbed">Lowbed Trailers</button>
-   405|   405|   405|   405|                <button class="tab-btn" data-tab="tanker">Tanker Trailers</button>
-   406|   406|   406|   406|                <button class="tab-btn" data-tab="dump">Dump Trailers</button>
-   407|   407|   407|   407|            </div>
-   408|   408|   408|   408|            
-   409|   409|   409|   409|            <!-- Flatbed Trailers -->
-   410|   410|   410|   410|            <div class="tab-content active" id="flatbed">
-   411|   411|   411|   411|                <div class="products-grid">
-   412|   412|   412|   412|                    <div class="product-card">
-   413|   413|   413|   413|                        <div class="product-image">
-   414|   414|   414|   414|                            <span class="product-badge">Hot Sale</span>
-   415|   415|   415|   415|                            <img src="../assets/images/dump-trailer-1.jpg" alt="40ft Flatbed Trailer" loading="lazy">
-   416|   416|   416|   416|                        </div>
-   417|   417|   417|   417|                        <div class="product-content">
-   418|   418|   418|   418|                            <h3>40ft Flatbed Trailer</h3>
-   419|   419|   419|   419|                            <div class="product-specs">
-   420|   420|   420|   420|                                <span class="spec-tag">3 Axles</span>
-   421|   421|   421|   421|                                <span class="spec-tag">60 Tons</span>
-   422|   422|   422|   422|                                <span class="spec-tag">Container Locks</span>
-   423|   423|   423|   423|                            </div>
-   424|   424|   424|   424|                            <p class="product-description">
-   425|   425|   425|   425|                                Standard 40ft flatbed trailer with 12 container locks, suitable for 20ft and 40ft containers.
-   426|   426|   426|   426|                            </p>
-   427|   427|   427|   427|                            <div class="product-actions">
-   428|   428|   428|   428|                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
-   429|   429|   429|   429|                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
-   430|   430|   430|   430|                            </div>
-   431|   431|   431|   431|                        </div>
-   432|   432|   432|   432|                    </div>
-   433|   433|   433|   433|                    
-   434|   434|   434|   434|                    <div class="product-card">
-   435|   435|   435|   435|                        <div class="product-image">
-   436|   436|   436|   436|                            <div class="placeholder">
-   437|   437|   437|   437|                                <i class="fas fa-truck-flatbed"></i>
-   438|   438|   438|   438|                            </div>
-   439|   439|   439|   439|                        </div>
-   440|   440|   440|   440|                        <div class="product-content">
-   441|   441|   441|   441|                            <h3>20ft Flatbed Trailer</h3>
-   442|   442|   442|   442|                            <div class="product-specs">
-   443|   443|   443|   443|                                <span class="spec-tag">2 Axles</span>
-   444|   444|   444|   444|                                <span class="spec-tag">40 Tons</span>
-   445|   445|   445|   445|                                <span class="spec-tag">Container Locks</span>
-   446|   446|   446|   446|                            </div>
-   447|   447|   447|   447|                            <p class="product-description">
-   448|   448|   448|   448|                                Compact 20ft flatbed trailer ideal for short-distance container transport.
-   449|   449|   449|   449|                            </p>
-   450|   450|   450|   450|                            <div class="product-actions">
-   451|   451|   451|   451|                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
-   452|   452|   452|   452|                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
-   453|   453|   453|   453|                            </div>
-   454|   454|   454|   454|                        </div>
-   455|   455|   455|   455|                    </div>
-   456|   456|   456|   456|                    
-   457|   457|   457|   457|                    <div class="product-card">
-   458|   458|   458|   458|                        <div class="product-image">
-   459|   459|   459|   459|                            <div class="placeholder">
-   460|   460|   460|   460|                                <i class="fas fa-truck-flatbed"></i>
-   461|   461|   461|   461|                            </div>
-   462|   462|   462|   462|                        </div>
-   463|   463|   463|   463|                        <div class="product-content">
-   464|   464|   464|   464|                            <h3>45ft Flatbed Trailer</h3>
-   465|   465|   465|   465|                            <div class="product-specs">
-   466|   466|   466|   466|                                <span class="spec-tag">3 Axles</span>
-   467|   467|   467|   467|                                <span class="spec-tag">70 Tons</span>
-   468|   468|   468|   468|                                <span class="spec-tag">Extra Long</span>
-   469|   469|   469|   469|                            </div>
-   470|   470|   470|   470|                            <p class="product-description">
-   471|   471|   471|   471|                                Extended flatbed trailer for 45ft containers and oversized cargo.
-   472|   472|   472|   472|                            </p>
-   473|   473|   473|   473|                            <div class="product-actions">
-   474|   474|   474|   474|                                <a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
-   475|   475|   475|   475|                                <a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
-   476|   476|   476|   476|                            </div>
-   477|   477|   477|   477|                        </div>
-   478|   478|   478|   478|                    </div>
-   479|   479|   479|   479|                </div>
-   480|   480|   480|   480|            </div>
-   481|   481|   481|   481|            
-   482|   482|   482|   482|            <!-- Lowbed Trailers -->
-   483|   483|   483|   483|            <div class="tab-content" id="lowbed" style="display: none;">
-   484|   484|   484|   484|                <div class="products-grid">
-   485|   485|   485|   485|                    <div class="product-card">
-   486|   486|   486|   486|                        <div class="product-image">
-   487|   487|   487|   487|                            <span class="product-badge">Popular</span>
-   488|   488|   488|   488|                            <div class="placeholder">
-   489|   489|   489|   489|                                <i class="fas fa-truck-moving"></i>
-   490|   490|   490|   490|                            </div>
-   491|   491|   491|   491|                        </div>
-   492|   492|   492|   492|                        <div class="product-content">
-   493|   493|   493|   493|                            <h3>60 Ton Lowbed Trailer</h3>
-   494|   494|   494|   494|                            <div class="product-specs">
-   495|   495|   495|   495|                                <span class="spec-tag">3 Axles</span>
-   496|   496|   496|   496|                                <span class="spec-tag">60 Tons</span>
-   497|   497|   497|   497|                                <span class="spec-tag">Hydraulic Ramp</span>
-   498|   498|   498|   498|                            </div>
-   499|   499|   499|   499|                            <p class="product-description">
-   500|   500|   500|   500|                                Heavy-duty lowbed trailer for construction equipment transport with hydraulic ramps.
-   501|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tongya Heavy Industry | China Africa Trucks</title>
+<meta name="description" content="Tongya Heavy Industry - Leading manufacturer of semi trailers and tankers in Liangshan, China. 20+ years of experience exporting to Africa.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+/* Factory Page Specific Styles */
+.factory-hero {
+background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+color: white;
+padding: 8rem 0 4rem;
+margin-top: 72px;
+}
+
+.factory-hero-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+
+.factory-hero-text h1 {
+color: white;
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.factory-hero-text .location {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+opacity: 0.9;
+margin-bottom: 1.5rem;
+}
+
+.factory-hero-text .description {
+font-size: 1.125rem;
+line-height: 1.8;
+opacity: 0.9;
+margin-bottom: 2rem;
+}
+
+.factory-hero-stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+margin-top: 2rem;
+}
+
+.hero-stat {
+text-align: center;
+}
+
+.hero-stat .number {
+font-size: 2.5rem;
+font-weight: 800;
+display: block;
+}
+
+.hero-stat .label {
+opacity: 0.8;
+font-size: 0.875rem;
+}
+
+.factory-hero-image {
+background: rgba(255,255,255,0.1);
+border-radius: 1rem;
+padding: 3rem;
+text-align: center;
+}
+
+.factory-hero-image i {
+font-size: 8rem;
+opacity: 0.3;
+}
+
+/* Products Section */
+.products-section {
+padding: 4rem 0;
+}
+
+.section-tabs {
+display: flex;
+gap: 0.5rem;
+margin-bottom: 2rem;
+border-bottom: 2px solid var(--border-light);
+overflow-x: auto;
+}
+
+.tab-btn {
+padding: 1rem 1.5rem;
+background: none;
+border: none;
+font-size: 1rem;
+font-weight: 600;
+color: var(--text-light);
+cursor: pointer;
+border-bottom: 3px solid transparent;
+transition: all 0.3s;
+white-space: nowrap;
+}
+
+.tab-btn:hover {
+color: var(--primary);
+}
+
+.tab-btn.active {
+color: var(--primary);
+border-bottom-color: var(--primary);
+}
+
+.products-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.product-card {
+background: white;
+border-radius: 1rem;
+overflow: hidden;
+box-shadow: var(--shadow-md);
+transition: all 0.3s;
+}
+
+.product-card:hover {
+transform: translateY(-8px);
+box-shadow: var(--shadow-xl);
+}
+
+.product-image {
+height: 200px;
+background: var(--bg-gray);
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.product-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.product-image .placeholder {
+font-size: 4rem;
+color: var(--primary);
+opacity: 0.3;
+}
+
+.product-badge {
+position: absolute;
+top: 1rem;
+left: 1rem;
+padding: 0.375rem 0.75rem;
+background: var(--accent);
+color: white;
+font-size: 0.75rem;
+font-weight: 600;
+border-radius: 2rem;
+}
+
+.product-content {
+padding: 1.5rem;
+}
+
+.product-content h3 {
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+}
+
+.product-specs {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.spec-tag {
+padding: 0.25rem 0.75rem;
+background: var(--bg-gray);
+border-radius: 1rem;
+font-size: 0.75rem;
+color: var(--text-light);
+}
+
+.product-description {
+color: var(--text-light);
+font-size: 0.9375rem;
+line-height: 1.6;
+margin-bottom: 1rem;
+}
+
+.product-actions {
+display: flex;
+gap: 0.75rem;
+}
+
+.product-actions .btn {
+flex: 1;
+text-align: center;
+}
+
+/* Certifications Section */
+.certifications-section {
+background: var(--bg-gray);
+padding: 4rem 0;
+}
+
+.certs-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+}
+
+.cert-card {
+background: white;
+padding: 2rem;
+border-radius: 1rem;
+text-align: center;
+box-shadow: var(--shadow-sm);
+}
+
+.cert-card i {
+font-size: 3rem;
+color: var(--primary);
+margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+font-size: 1.125rem;
+margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+color: var(--text-light);
+font-size: 0.9375rem;
+}
+
+/* Photo Gallery */
+.gallery-section {
+padding: 4rem 0;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 1rem;
+}
+
+.gallery-item {
+aspect-ratio: 4/3;
+background: var(--bg-gray);
+border-radius: 0.5rem;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.gallery-item .placeholder {
+font-size: 3rem;
+color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.factory-hero-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+
+.factory-hero-text h1 {
+font-size: 2rem;
+}
+
+.factory-hero-stats {
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+.products-grid {
+grid-template-columns: 1fr;
+}
+
+.section-tabs {
+padding-bottom: 0.5rem;
+}
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="container">
+<div class="nav-wrapper">
+<a href="../index.html" class="logo">
+<div class="logo-icon">
+<i class="fas fa-truck"></i>
+</div>
+<div class="logo-text">
+<span class="logo-main">China Africa</span>
+<span class="logo-sub">TRUCKS</span>
+</div>
+</a>
+
+<div class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="tongya.html" class="active">Factory</a></li>
+<li><a href="../index.html#products">Products</a></li>
+<li><a href="../index.html#contact">Contact</a></li>
+</ul>
+
+<div class="nav-actions">
+<a href="https://wa.me/2348140067523" class="btn btn-primary btn-sm" target="_blank">
+<i class="fab fa-whatsapp"></i>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Factory Hero -->
+<section class="factory-hero">
+<div class="container">
+<div class="factory-hero-content">
+<div class="factory-hero-text">
+<div class="location">
+<i class="fas fa-map-marker-alt"></i>
+<span>Liangshan, Shandong Province, China</span>
+</div>
+<h1>Tongya Heavy Industry</h1>
+<p class="description">
+Established in 2003, Tongya Heavy Industry is a leading manufacturer of semi-trailers and tankers 
+in China. With over 20 years of experience, we specialize in producing high-quality flatbed trailers, 
+lowbed trailers, fuel tankers, and dump trailers for the African market.
+</p>
+<div class="factory-hero-stats">
+<div class="hero-stat">
+<span class="number">20+</span>
+<span class="label">Years Experience</span>
+</div>
+<div class="hero-stat">
+<span class="number">5000+</span>
+<span class="label">Units Exported</span>
+</div>
+<div class="hero-stat">
+<span class="number">30+</span>
+<span class="label">Countries Served</span>
+</div>
+</div>
+</div>
+<div class="factory-hero-image">
+<img src="../assets/images/tongya-factory.jpg" alt="Tongya Heavy Industry Factory" style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem;">
+</div>
+</div>
+</div>
+</section
+<!-- Factory Photos -->
+<section class="gallery-section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Factory Gallery</span>
+<h2 class="section-title">Manufacturing Facility</h2>
+<p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
+Modern production facility with advanced equipment and quality control
+</p>
+</div>
+
+<div class="gallery-grid">
+<div class="gallery-item">
+<img src="../assets/images/detail-1.jpg" alt="Factory Detail 1" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="../assets/images/detail-2.jpg" alt="Factory Detail 2" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="../assets/images/dump-trailer-1.jpg" alt="Product 1" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="../assets/images/dump-trailer-2.jpg" alt="Product 2" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="../assets/images/dump-trailer-3.jpg" alt="Product 3" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="../assets/images/dump-trailer-4.jpg" alt="Product 4" loading="lazy">
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 2rem; background: var(--bg-gray); border-radius: 1rem;">
+<i class="fas fa-info-circle" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem;"></i>
+<p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+<strong>Real Tongya Factory Photos:</strong> These are actual images from Tongya Heavy Industry showing their manufacturing quality and product range.
+</p>
+</div>
+</div>
+</section>>
+
+<!-- Products Section -->
+<section class="products-section" id="products">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Our Products</span>
+<h2 class="section-title">Comprehensive Trailer Solutions</h2>
+<p style="color: var(--text-light); max-width: 600px; margin: 1rem auto 0;">
+All products manufactured by Tongya Heavy Industry with full quality certification
+</p>
+</div>
+
+<!-- Product Tabs -->
+<div class="section-tabs">
+<button class="tab-btn active" data-tab="flatbed">Flatbed Trailers</button>
+<button class="tab-btn" data-tab="lowbed">Lowbed Trailers</button>
+<button class="tab-btn" data-tab="tanker">Tanker Trailers</button>
+<button class="tab-btn" data-tab="dump">Dump Trailers</button>
+</div>
+
+<!-- Flatbed Trailers -->
+<div class="tab-content active" id="flatbed">
+<div class="products-grid">
+<div class="product-card">
+<div class="product-image">
+<span class="product-badge">Hot Sale</span>
+<img src="../assets/images/dump-trailer-1.jpg" alt="40ft Flatbed Trailer" loading="lazy">
+</div>
+<div class="product-content">
+<h3>40ft Flatbed Trailer</h3>
+<div class="product-specs">
+<span class="spec-tag">3 Axles</span>
+<span class="spec-tag">60 Tons</span>
+<span class="spec-tag">Container Locks</span>
+</div>
+<p class="product-description">
+Standard 40ft flatbed trailer with 12 container locks, suitable for 20ft and 40ft containers.
+</p>
+<div class="product-actions">
+<a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+<a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-image">
+<div class="placeholder">
+<i class="fas fa-truck-flatbed"></i>
+</div>
+</div>
+<div class="product-content">
+<h3>20ft Flatbed Trailer</h3>
+<div class="product-specs">
+<span class="spec-tag">2 Axles</span>
+<span class="spec-tag">40 Tons</span>
+<span class="spec-tag">Container Locks</span>
+</div>
+<p class="product-description">
+Compact 20ft flatbed trailer ideal for short-distance container transport.
+</p>
+<div class="product-actions">
+<a href="../index.html#contact" class="btn btn-primary btn-sm">Inquire Now</a>
+<a href="#" class="btn btn-outline btn-sm" onclick="alert('Add specifications PDF'); return false;">Specs</a>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-image">
+<div class="placeholder">
+<i class="fas fa-truck-flatbed"></i>
