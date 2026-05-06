@@ -208,6 +208,40 @@ color: white;
 }
 .related-card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
 .related-card p { color: #64748b; font-size: 0.8125rem; margin-bottom: 0; }
+/* ===== Image Gallery ===== */
+.gallery-row {
+display: flex;
+gap: 1rem;
+padding: 2rem 0 0;
+overflow-x: auto;
+}
+.gallery-row .gallery-img {
+flex: 0 0 auto;
+width: 180px;
+border-radius: 0.5rem;
+overflow: hidden;
+border: 2px solid #e2e8f0;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+.gallery-row .gallery-img:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.gallery-row .gallery-img img {
+width: 100%;
+height: 120px;
+object-fit: cover;
+display: block;
+}
+.gallery-row .gallery-label {
+font-size: 0.75rem;
+text-align: center;
+padding: 0.35rem 0.5rem;
+background: #f8fafc;
+color: #64748b;
+font-weight: 500;
+}
 @media (max-width: 768px) {
 .product-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
 .product-hero-text .product-actions { flex-direction: column; }
@@ -286,6 +320,22 @@ color: white;
 </div>
 <div class="product-hero-image">
 <img src="../assets/images/tongya-factory.jpg" alt="Lowbed Trailer" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'><i class=\\'fas fa-truck-moving\\'></i><span>Lowbed Trailer Image</span></div>'">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Image Gallery -->
+<section style="padding: 1.5rem 0 0;">
+<div class="container">
+<div class="gallery-row">
+<div class="gallery-img" onclick="window.open('../assets/images/tongya-factory.jpg','_blank')">
+<img src="../assets/images/tongya-factory.jpg" alt="Tongya Lowbed Trailer">
+<div class="gallery-label">Tongya Lowbed</div>
+</div>
+<div class="gallery-img" onclick="window.open('../assets/images/huayu/huayu-lowbed-1.jpg','_blank')">
+<img src="../assets/images/huayu/huayu-lowbed-1.jpg" alt="Huayu Lowbed Trailer">
+<div class="gallery-label">Huayu Lowbed</div>
 </div>
 </div>
 </div>
