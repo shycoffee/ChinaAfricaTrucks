@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "China Africa Trucks | Premium Trailer Export Platform",
-    "description": "Your trusted platform for exporting quality trucks and trailers from China to Africa. Multiple certified factories, competitive prices, reliable shipping.",
-    "keywords": "China trucks, Africa export, trailers, flatbed, tanker, dump truck, semi trailer, logistics"
+    "description": "Your trusted platform for exporting quality trucks and trailers from China to Africa. Partner factories: Tongya Heavy Industry, Huayu Group. Competitive prices, reliable shipping.",
+    "keywords": "China trucks, Africa export, trailers, flatbed, tanker, dump truck, semi trailer, logistics, Tongya, Huayu"
   },
   "nav": {
     "home": "Home",
@@ -15,7 +15,7 @@
   },
   "hero": {
     "title": "Your Gateway to China's Best Trucks & Trailers",
-    "subtitle": "Connecting African businesses with certified Chinese manufacturers",
+    "subtitle": "Connecting African businesses with certified Chinese manufacturers — Tongya & Huayu",
     "cta_primary": "Explore Products",
     "cta_secondary": "View Factories",
     "stats": {
@@ -27,14 +27,22 @@
   },
   "factories": {
     "title": "Our Partner Factories",
-    "subtitle": "Carefully selected certified manufacturers across China's industrial belt",
+    "subtitle": "Direct partnerships with two of Liangshan's finest trailer manufacturers",
     "view_all": "View All Factories",
     "tongya": {
       "name": "Tongya Heavy Industry",
       "location": "Liangshan, Shandong",
-      "specialty": "Semi Trailers & Tankers",
-      "description": "Leading manufacturer specializing in flatbed trailers, lowbed trailers, fuel tankers, and dump trailers with 20+ years of experience.",
-      "established": "Established 2003",
+      "specialty": "Container & Tanker Trailers",
+      "description": "Founded in 2003 with 20+ years of trailer manufacturing excellence. Equipped with intelligent robotic welding lines and electrophoretic coating processes. Specializing in container trailers, aluminum tankers, powder tankers, and bulk cement trailers for African markets.",
+      "established": "Est. 2003",
+      "certification": "ISO 9001, CCC, BV, SGS"
+    },
+    "huayu": {
+      "name": "Huayu Group",
+      "location": "Liangshan, Shandong",
+      "specialty": "Flatbed & Dump Trailers",
+      "description": "A Liangshan-based trailer manufacturing powerhouse with decades of experience. Specializing in flatbed semi-trailers, dump trailers, lowbed trailers, and bulk cargo trailers. Known for heavy-duty construction, competitive pricing, and high-volume export capability to Africa.",
+      "established": "Est. 2000",
       "certification": "ISO 9001, CCC Certified"
     }
   },
@@ -69,12 +77,12 @@
   "features": {
     "title": "Why Choose Us",
     "factory_direct": {
-      "title": "Factory Direct Prices",
-      "description": "Skip the middlemen. Deal directly with certified manufacturers for the best prices."
+      "title": "Two Factory Partners",
+      "description": "Direct partnerships with Tongya and Huayu — two of Liangshan's top manufacturers. Compare options, get the best price."
     },
     "quality": {
       "title": "Quality Assured",
-      "description": "All products meet international standards with full certification and inspection reports."
+      "description": "All products meet international standards with ISO 9001, CCC certification and inspection reports."
     },
     "logistics": {
       "title": "Complete Logistics",
@@ -94,7 +102,7 @@
       },
       "quote": {
         "title": "Get Quote",
-        "description": "Receive detailed quotation with specifications, pricing, and shipping options."
+        "description": "Receive competitive quotations from our partner factories."
       },
       "production": {
         "title": "Production",
@@ -139,6 +147,6 @@
     "quick_links": "Quick Links",
     "products": "Products",
     "contact": "Contact",
-    "copyright": "© 2024 China Africa Trucks. All rights reserved."
+    "copyright": "© 2026 China Africa Trucks. All rights reserved."
   }
 }
