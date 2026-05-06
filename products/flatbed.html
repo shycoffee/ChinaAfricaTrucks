@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flatbed Trailers | China Africa Trucks</title>
+<meta name="description" content="Standard and container flatbed trailers for 20ft, 40ft, and 45ft containers. Available in 2-axle and 3-axle configurations from Tongya and Huayu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+/* ===== Product Hero ===== */
+.product-hero {
+background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+color: white;
+padding: 8rem 0 4rem;
+margin-top: 72px;
+position: relative;
+overflow: hidden;
+}
+.product-hero::before {
+content: '';
+position: absolute;
+inset: 0;
+background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.08) 1px, transparent 0);
+background-size: 40px 40px;
+}
+.product-hero .container {
+position: relative;
+z-index: 1;
+}
+.product-hero-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+.product-hero-text h1 {
+color: white;
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 1rem;
+line-height: 1.15;
+}
+.product-hero-text .product-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.5rem 1rem;
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 500;
+margin-bottom: 1.5rem;
+}
+.product-hero-text .product-badge i {
+color: #93c5fd;
+}
+.product-hero-text .product-desc {
+font-size: 1.125rem;
+line-height: 1.8;
+opacity: 0.9;
+margin-bottom: 2rem;
+}
+.product-hero-text .product-actions {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.product-hero-image {
+position: relative;
+}
+.product-hero-image img {
+width: 100%;
+border-radius: 1rem;
+box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.product-hero-image .image-placeholder {
+width: 100%;
+aspect-ratio: 16/10;
+background: rgba(255,255,255,0.1);
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+color: rgba(255,255,255,0.6);
+font-size: 1rem;
+border: 2px dashed rgba(255,255,255,0.2);
+}
+.product-hero-image .image-placeholder i {
+font-size: 4rem;
+color: rgba(255,255,255,0.4);
+}
+
+/* ===== Specs Section ===== */
+.specs-section {
+padding: 5rem 0;
+}
+.specs-section h2 {
+text-align: center;
+margin-bottom: 3rem;
+font-size: 2rem;
+}
+.specs-table {
+width: 100%;
+border-collapse: collapse;
+border-radius: 0.75rem;
+overflow: hidden;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.specs-table th {
+background: #1e40af;
+color: white;
+padding: 1rem 1.25rem;
+text-align: left;
+font-weight: 600;
+font-size: 0.9375rem;
+}
+.specs-table th:first-child { width: 35%; }
+.specs-table td {
+padding: 0.875rem 1.25rem;
+border-bottom: 1px solid #e2e8f0;
+font-size: 0.9375rem;
+}
+.specs-table td:first-child {
+font-weight: 600;
+color: #0f172a;
+}
+.specs-table tr:nth-child(even) td {
+background: #f8fafc;
+}
+.specs-table tr:last-child td {
+border-bottom: none;
+}
+
+/* ===== Manufacturers Section ===== */
+.manufacturers-section {
+padding: 5rem 0;
+background: #f8fafc;
+}
+.manufacturers-section h2 {
+text-align: center;
+margin-bottom: 3rem;
+font-size: 2rem;
+}
+.manufacturers-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+.manufacturer-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.manufacturer-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.manufacturer-card .m-icon {
+width: 64px;
+height: 64px;
+background: rgba(30,64,175,0.1);
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+color: #1e40af;
+margin-bottom: 1rem;
+}
+.manufacturer-card h3 {
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+}
+.manufacturer-card p {
+color: #64748b;
+font-size: 0.9375rem;
+line-height: 1.7;
+margin-bottom: 0;
+}
+
+/* ===== Features Section ===== */
+.features-section {
+padding: 5rem 0;
+}
+.features-section h2 {
+text-align: center;
+margin-bottom: 3rem;
+font-size: 2rem;
+}
+.features-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+}
+.feature-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem;
+text-align: center;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+transition: transform 0.3s ease;
+}
+.feature-card:hover {
+transform: translateY(-4px);
+}
+.feature-card .f-icon {
+width: 64px;
+height: 64px;
+background: rgba(30,64,175,0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+color: #1e40af;
+margin: 0 auto 1rem;
+}
+.feature-card h3 {
+font-size: 1.125rem;
+margin-bottom: 0.5rem;
+}
+.feature-card p {
+color: #64748b;
+font-size: 0.875rem;
+line-height: 1.6;
+margin-bottom: 0;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+padding: 5rem 0;
+background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+color: white;
+text-align: center;
+}
+.cta-section h2 {
+color: white;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+.cta-section p {
+font-size: 1.125rem;
+opacity: 0.9;
+margin-bottom: 2rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+.cta-section .cta-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+/* ===== Related Products ===== */
+.related-section {
+padding: 5rem 0;
+background: #f8fafc;
+}
+.related-section h2 {
+text-align: center;
+margin-bottom: 3rem;
+font-size: 2rem;
+}
+.related-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1.5rem;
+}
+.related-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem 1.5rem;
+text-align: center;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: block;
+}
+.related-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.related-card .r-icon {
+width: 56px;
+height: 56px;
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin: 0 auto 1rem;
+color: white;
+}
+.related-card h3 {
+font-size: 1rem;
+margin-bottom: 0.25rem;
+}
+.related-card p {
+color: #64748b;
+font-size: 0.8125rem;
+margin-bottom: 0;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+.product-hero-grid {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+.product-hero-text .product-actions {
+flex-direction: column;
+}
+.product-hero-text .product-actions .btn {
+width: 100%;
+justify-content: center;
+}
+.specs-table th, .specs-table td {
+padding: 0.75rem 0.875rem;
+font-size: 0.8125rem;
+}
+.manufacturers-grid {
+grid-template-columns: 1fr;
+}
+.features-grid {
+grid-template-columns: 1fr;
+}
+.related-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 480px) {
+.related-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="container">
+<div class="nav-wrapper">
+<a href="../" class="logo">
+<div class="logo-icon">
+<i class="fas fa-truck-moving"></i>
+</div>
+<div class="logo-text">
+<span class="logo-main">China Africa</span>
+<span class="logo-sub">Trucks</span>
+</div>
+</a>
+<div class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="../#home">Home</a></li>
+<li><a href="../#factories">Factories</a></li>
+<li class="dropdown">
+<a href="../#products">Products <i class="fas fa-chevron-down"></i></a>
+<ul class="dropdown-menu">
+<li><a href="flatbed.html">Flatbed Trailers</a></li>
+<li><a href="lowbed.html">Lowbed Trailers</a></li>
+<li><a href="tanker.html">Tanker Trailers</a></li>
+<li><a href="dump.html">Dump Trailers</a></li>
+<li><a href="cargo.html">Cargo Trucks</a></li>
+<li><a href="tractor.html">Tractor Heads</a></li>
+</ul>
+</li>
+<li><a href="../#about">About</a></li>
+<li><a href="../#contact">Contact</a></li>
+</ul>
+<div class="nav-actions">
+<a href="https://wa.me/2348140067523" class="btn btn-primary btn-sm" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Product Hero -->
+<section class="product-hero">
+<div class="container">
+<div class="product-hero-grid">
+<div class="product-hero-text">
+<div class="product-badge">
+<i class="fas fa-truck-flatbed"></i>
+<span>Flatbed Trailer / 平板挂车</span>
+</div>
+<h1>Flatbed &amp; Container Trailers</h1>
+<p class="product-desc">Standard and container flatbed trailers for 20ft, 40ft, and 45ft containers. Available in 2-axle and 3-axle configurations — built to the highest standards for African road conditions.</p>
+<div class="product-actions">
+<a href="https://wa.me/2348140067523" class="btn btn-secondary btn-lg" target="_blank">
+<i class="fab fa-whatsapp"></i> Get Quote
+</a>
+<a href="#specs" class="btn btn-outline btn-lg" style="border-color:white;color:white;">
+<i class="fas fa-list"></i> View Specs
+</a>
+</div>
+</div>
+<div class="product-hero-image">
+<img src="../assets/images/chinatongya/1565429285.jpg" alt="Flatbed Trailer" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'><i class=\\'fas fa-truck-flatbed\\'></i><span>Flatbed Trailer Image</span></div>'">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Specs Section -->
+<section class="specs-section" id="specs">
+<div class="container">
+<h2><i class="fas fa-list" style="color:#1e40af;margin-right:0.75rem;"></i>Technical Specifications</h2>
+<div style="overflow-x:auto;">
+<table class="specs-table">
+<thead>
+<tr><th>Specification</th><th>Details</th></tr>
+</thead>
+<tbody>
+<tr><td>Overall Length</td><td>12.5m (40ft) / 13.75m (45ft) / 16.5m (extendable)</td></tr>
+<tr><td>Overall Width</td><td>2.5m (standard) — 2.55m (custom)</td></tr>
+<tr><td>Loading Length</td><td>20ft / 40ft / 45ft container compatible</td></tr>
+<tr><td>Axles</td><td>2-axle (16-25 tons) or 3-axle (40-60 tons) — FUWA or BPW</td></tr>
+<tr><td>Payload Capacity</td><td>30 - 60 tons</td></tr>
+<tr><td>Suspension</td><td>Mechanical spring (standard) / Air-ride suspension (optional)</td></tr>
+<tr><td>Tires</td><td>12R22.5 (tubeless radial) — 8 pcs (2-axle) / 12 pcs (3-axle)</td></tr>
+<tr><td>Kingpin</td><td>2.0" or 3.5" — JOST brand</td></tr>
+<tr><td>Landing Gear</td><td>28-ton capacity — JOST brand, 2-speed</td></tr>
+<tr><td>Brake System</td><td>Dual-line air brakes with ABS — WABCO valves</td></tr>
+<tr><td>Container Locks</td><td>12 twist locks (flip-up type) — ISO standard</td></tr>
+<tr><td>Main Beam</td><td>Q345B high-strength steel — I-beam 500mm height</td></tr>
+<tr><td>Paint</td><td>E-coating (anti-corrosion) + top coat — any RAL color</td></tr>
+<tr><td>Electrical</td><td>24V LED lighting system — 7-pin plug</td></tr>
+<tr><td>Warranty</td><td>12 months structural warranty</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- Manufacturers Section -->
+<section class="manufacturers-section">
+<div class="container">
+<h2><i class="fas fa-industry" style="color:#1e40af;margin-right:0.75rem;"></i>Manufacturers</h2>
+<div class="manufacturers-grid">
+<div class="manufacturer-card">
+<div class="m-icon"><i class="fas fa-truck-flatbed"></i></div>
+<h3>Tongya Heavy Industry</h3>
+<p>Specialist in container trailers with robotic welding technology. Tongya's flatbed trailers feature precision-cut main beams, automated assembly lines, and strict QC processes. Their container trailers are designed for ISO container transport with 12-point locking systems and reinforced cross members.</p>
+</div>
+<div class="manufacturer-card">
+<div class="m-icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Huayu Trailers</h3>
+<p>Heavy-duty flatbed trailers engineered specifically for African road conditions. Huayu uses thicker steel plate, reinforced suspension brackets, and heavy-duty spring packs. Their flatbeds are field-tested in West and East African markets with proven durability.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+<div class="container">
+<h2><i class="fas fa-star" style="color:#1e40af;margin-right:0.75rem;"></i>Key Features</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-robot"></i></div>
+<h3>Robotic Welding</h3>
+<p>All main seams are welded by robotic arms for consistent penetration, strength, and perfect bead appearance — no porosity or weak spots.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-shield-halved"></i></div>
+<h3>E-Coating Protection</h3>
+<p>Full chassis e-coating (electrophoretic paint) provides superior anti-corrosion protection, essential for tropical and coastal African environments.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-lock"></i></div>
+<h3>Container Lock System</h3>
+<p>12 ISO-standard twist locks with flip-up mechanism allow fast container loading/unloading. Compatible with 20ft, 40ft, and 45ft containers.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-weight-hanging"></i></div>
+<h3>Heavy-Duty Axles</h3>
+<p>FUWA or BPW axles with 12R22.5 tires rated for 60-ton payloads. Drum brakes with automatic slack adjusters for reliable stopping power.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="container">
+<h2>Ready to Order Your Flatbed Trailer?</h2>
+<p>Contact us for a tailored quote. We'll help you choose the right configuration for your specific needs — container type, axle count, and optional upgrades.</p>
+<div class="cta-buttons">
+<a href="https://wa.me/2348140067523" class="btn btn-secondary btn-lg" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp: +234 814 006 7523
+</a>
+<a href="mailto:chinaafricatrucks@gmail.com" class="btn btn-outline btn-lg" style="border-color:white;color:white;">
+<i class="fas fa-envelope"></i> Email Us
+</a>
+</div>
+</div>
+</section>
+
+<!-- Related Products -->
+<section class="related-section">
+<div class="container">
+<h2><i class="fas fa-th-large" style="color:#1e40af;margin-right:0.75rem;"></i>Related Products</h2>
+<div class="related-grid">
+<a href="lowbed.html" class="related-card">
+<div class="r-icon" style="background:#7c3aed;"><i class="fas fa-truck-moving"></i></div>
+<h3>Lowbed Trailers</h3>
+<p>30-100 tons &bull; Extendable decks &bull; Heavy equipment transport</p>
+</a>
+<a href="tanker.html" class="related-card">
+<div class="r-icon" style="background:#dc2626;"><i class="fas fa-oil-can"></i></div>
+<h3>Tanker Trailers</h3>
+<p>30-60 m&sup3; &bull; Fuel, chemical, food-grade &bull; Pneumatic unloading</p>
+</a>
+<a href="cargo.html" class="related-card">
+<div class="r-icon" style="background:#10b981;"><i class="fas fa-truck"></i></div>
+<h3>Cargo Trucks</h3>
+<p>2-40 ton payload &bull; Flatbed, box, reefer &bull; Multiple drive configs</p>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../" class="logo">
+<div class="logo-icon">
+<i class="fas fa-truck-moving"></i>
+</div>
+<div class="logo-text">
+<span class="logo-main">China Africa</span>
+<span class="logo-sub">Trucks</span>
+</div>
+</a>
+<p class="footer-tagline">Your trusted partner for importing quality vehicles from China to Africa.</p>
+<div class="footer-social">
+<a href="https://tiktok.com/@ChinaAfricaTrucks" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/2348140067523" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="../#home">Home</a></li>
+<li><a href="../#factories">Factories</a></li>
+<li><a href="../#products">Products</a></li>
+<li><a href="../#about">About</a></li>
+<li><a href="../#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer-products">
+<h4>Products</h4>
+<ul>
+<li><a href="flatbed.html">Flatbed Trailers</a></li>
+<li><a href="lowbed.html">Lowbed Trailers</a></li>
+<li><a href="tanker.html">Tanker Trailers</a></li>
+<li><a href="dump.html">Dump Trailers</a></li>
+<li><a href="cargo.html">Cargo Trucks</a></li>
+<li><a href="tractor.html">Tractor Heads</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Contact</h4>
+<ul>
+<li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348140067523" target="_blank">+234 814 006 7523</a></li>
+<li><i class="fas fa-envelope"></i> <a href="mailto:chinaafricatrucks@gmail.com">chinaafricatrucks@gmail.com</a></li>
+<li><i class="fas fa-map-marker-alt"></i> <span>Liangshan, Shandong, China</span></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 China Africa Trucks. All rights reserved.</p>
+<div class="footer-legal">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/2348140067523" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<i class="fab fa-whatsapp"></i>
+<span class="whatsapp-tooltip">Chat with us</span>
+</a>
+
+<!-- Mobile Toggle Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var toggle = document.getElementById('mobileToggle');
+var menu = document.getElementById('navMenu');
+if (toggle && menu) {
+toggle.addEventListener('click', function() {
+menu.classList.toggle('active');
+var spans = toggle.querySelectorAll('span');
+spans.forEach(function(s) { s.classList.toggle('active'); });
+});
+}
+});
+</script>
+</body>
+</html>

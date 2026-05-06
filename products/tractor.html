@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tractor Heads | China Africa Trucks</title>
+<meta name="description" content="4x2, 6x4, 6x2 tractor heads. 340HP-540HP from Sinotruk HOWO and Shacman X3000. Cummins and Weichai engines, FAST transmissions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.product-hero {
+background: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #fb923c 100%);
+color: white;
+padding: 8rem 0 4rem;
+margin-top: 72px;
+position: relative;
+overflow: hidden;
+}
+.product-hero::before {
+content: '';
+position: absolute;
+inset: 0;
+background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.08) 1px, transparent 0);
+background-size: 40px 40px;
+}
+.product-hero .container { position: relative; z-index: 1; }
+.product-hero-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+.product-hero-text h1 {
+color: white;
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 1rem;
+line-height: 1.15;
+}
+.product-hero-text .product-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.5rem 1rem;
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 500;
+margin-bottom: 1.5rem;
+}
+.product-hero-text .product-badge i { color: #fed7aa; }
+.product-hero-text .product-desc {
+font-size: 1.125rem;
+line-height: 1.8;
+opacity: 0.9;
+margin-bottom: 2rem;
+}
+.product-hero-text .product-actions {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
+.product-hero-image img {
+width: 100%;
+border-radius: 1rem;
+box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.product-hero-image .image-placeholder {
+width: 100%;
+aspect-ratio: 16/10;
+background: rgba(255,255,255,0.1);
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+color: rgba(255,255,255,0.6);
+font-size: 1rem;
+border: 2px dashed rgba(255,255,255,0.2);
+}
+.product-hero-image .image-placeholder i {
+font-size: 4rem;
+color: rgba(255,255,255,0.4);
+}
+.specs-section { padding: 5rem 0; }
+.specs-section h2 { text-align: center; margin-bottom: 3rem; font-size: 2rem; }
+.specs-table {
+width: 100%;
+border-collapse: collapse;
+border-radius: 0.75rem;
+overflow: hidden;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.specs-table th {
+background: #f97316;
+color: white;
+padding: 1rem 1.25rem;
+text-align: left;
+font-weight: 600;
+font-size: 0.9375rem;
+}
+.specs-table th:first-child { width: 35%; }
+.specs-table td {
+padding: 0.875rem 1.25rem;
+border-bottom: 1px solid #e2e8f0;
+font-size: 0.9375rem;
+}
+.specs-table td:first-child { font-weight: 600; color: #0f172a; }
+.specs-table tr:nth-child(even) td { background: #f8fafc; }
+.specs-table tr:last-child td { border-bottom: none; }
+.manufacturers-section { padding: 5rem 0; background: #f8fafc; }
+.manufacturers-section h2 { text-align: center; margin-bottom: 3rem; font-size: 2rem; }
+.manufacturers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.manufacturer-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.manufacturer-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+.manufacturer-card .m-icon {
+width: 64px; height: 64px;
+background: rgba(249,115,22,0.1);
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+color: #f97316;
+margin-bottom: 1rem;
+}
+.manufacturer-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.manufacturer-card p { color: #64748b; font-size: 0.9375rem; line-height: 1.7; margin-bottom: 0; }
+.features-section { padding: 5rem 0; }
+.features-section h2 { text-align: center; margin-bottom: 3rem; font-size: 2rem; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.feature-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem;
+text-align: center;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+transition: transform 0.3s ease;
+}
+.feature-card:hover { transform: translateY(-4px); }
+.feature-card .f-icon {
+width: 64px; height: 64px;
+background: rgba(249,115,22,0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+color: #f97316;
+margin: 0 auto 1rem;
+}
+.feature-card h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+.feature-card p { color: #64748b; font-size: 0.875rem; line-height: 1.6; margin-bottom: 0; }
+.cta-section {
+padding: 5rem 0;
+background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+color: white;
+text-align: center;
+}
+.cta-section h2 { color: white; font-size: 2rem; margin-bottom: 1rem; }
+.cta-section p { font-size: 1.125rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+.cta-section .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.related-section { padding: 5rem 0; background: #f8fafc; }
+.related-section h2 { text-align: center; margin-bottom: 3rem; font-size: 2rem; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.related-card {
+background: white;
+border-radius: 1rem;
+padding: 2rem 1.5rem;
+text-align: center;
+box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+border: 1px solid #e2e8f0;
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: block;
+}
+.related-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+.related-card .r-icon {
+width: 56px; height: 56px;
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+margin: 0 auto 1rem;
+color: white;
+}
+.related-card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+.related-card p { color: #64748b; font-size: 0.8125rem; margin-bottom: 0; }
+@media (max-width: 768px) {
+.product-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+.product-hero-text .product-actions { flex-direction: column; }
+.product-hero-text .product-actions .btn { width: 100%; justify-content: center; }
+.specs-table th, .specs-table td { padding: 0.75rem 0.875rem; font-size: 0.8125rem; }
+.manufacturers-grid { grid-template-columns: 1fr; }
+.features-grid { grid-template-columns: 1fr; }
+.related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="container">
+<div class="nav-wrapper">
+<a href="../" class="logo">
+<div class="logo-icon"><i class="fas fa-truck-moving"></i></div>
+<div class="logo-text">
+<span class="logo-main">China Africa</span>
+<span class="logo-sub">Trucks</span>
+</div>
+</a>
+<div class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="../#home">Home</a></li>
+<li><a href="../#factories">Factories</a></li>
+<li class="dropdown">
+<a href="../#products">Products <i class="fas fa-chevron-down"></i></a>
+<ul class="dropdown-menu">
+<li><a href="flatbed.html">Flatbed Trailers</a></li>
+<li><a href="lowbed.html">Lowbed Trailers</a></li>
+<li><a href="tanker.html">Tanker Trailers</a></li>
+<li><a href="dump.html">Dump Trailers</a></li>
+<li><a href="cargo.html">Cargo Trucks</a></li>
+<li><a href="tractor.html">Tractor Heads</a></li>
+</ul>
+</li>
+<li><a href="../#about">About</a></li>
+<li><a href="../#contact">Contact</a></li>
+</ul>
+<div class="nav-actions">
+<a href="https://wa.me/2348140067523" class="btn btn-primary btn-sm" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Product Hero -->
+<section class="product-hero">
+<div class="container">
+<div class="product-hero-grid">
+<div class="product-hero-text">
+<div class="product-badge">
+<i class="fas fa-truck-monster"></i>
+<span>Tractor Head / 牵引车头</span>
+</div>
+<h1>Tractor Heads — 340HP to 540HP</h1>
+<p class="product-desc">4x2, 6x4, and 6x2 tractor heads from Sinotruk HOWO and Shacman X3000. Powered by Cummins, Weichai, or Yuchai engines with FAST manual or AMT transmissions. Designed for maximum fuel efficiency and driver comfort on long-haul African routes.</p>
+<div class="product-actions">
+<a href="https://wa.me/2348140067523" class="btn btn-secondary btn-lg" target="_blank">
+<i class="fab fa-whatsapp"></i> Get Quote
+</a>
+<a href="#specs" class="btn btn-outline btn-lg" style="border-color:white;color:white;">
+<i class="fas fa-list"></i> View Specs
+</a>
+</div>
+</div>
+<div class="product-hero-image">
+<img src="../assets/images/tongya-factory.jpg" alt="Tractor Head" onerror="this.parentElement.innerHTML='<div class=\\'image-placeholder\\'><i class=\\'fas fa-truck-monster\\'></i><span>Tractor Head Image</span></div>'">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Specs Section -->
+<section class="specs-section" id="specs">
+<div class="container">
+<h2><i class="fas fa-list" style="color:#f97316;margin-right:0.75rem;"></i>Technical Specifications</h2>
+<div style="overflow-x:auto;">
+<table class="specs-table">
+<thead>
+<tr><th>Specification</th><th>Details</th></tr>
+</thead>
+<tbody>
+<tr><td>Horsepower</td><td>340 HP / 375 HP / 420 HP / 460 HP / 480 HP / 540 HP</td></tr>
+<tr><td>Drive Configuration</td><td>4x2 (340-420 HP) / 6x2 (375-460 HP) / 6x4 (420-540 HP)</td></tr>
+<tr><td>Engine Brand</td><td>Cummins ISG / ISM / ISX series || Weichai WP10 / WP12 / WP13 || Yuchai YC6 series</td></tr>
+<tr><td>Transmission</td><td>FAST 9-speed / 10-speed / 12-speed manual || FAST AMT (optional)</td></tr>
+<tr><td>GCW (Gross Combination Weight)</td><td>18 tons (4x2) / 40 tons (6x2) / 49-55 tons (6x4)</td></tr>
+<tr><td>Wheelbase</td><td>3.2m (4x2) / 3.5m (6x2) / 3.6-3.8m (6x4)</td></tr>
+<tr><td>Fuel Tank</td><td>400L (standard) / 600L / 800L — aluminum alloy</td></tr>
+<tr><td>Cabin Type</td><td>Day cab (short haul) / Sleeper cab (long haul) with A/C</td></tr>
+<tr><td>Driver Comfort</td><td>Air suspension driver seat, power windows, central locking, Bluetooth radio, A/C</td></tr>
+<tr><td>Brake System</td><td>Dual-line air brakes + ABS + Engine brake (Jake brake)</td></tr>
+<tr><td>Fifth Wheel</td><td>2.0" or 3.5" — JOST brand (standard), replaceable</td></tr>
+<tr><td>Tires</td><td>12R22.5 (steering) / 12R22.5 or 315/80R22.5 (drive) — all radial</td></tr>
+<tr><td>Cooling System</td><td>Heavy-duty radiator for tropical climates — oversized fan clutch</td></tr>
+<tr><td>Emission Standard</td><td>Euro II / Euro III / Euro V — depending on country requirements</td></tr>
+<tr><td>Warranty</td><td>12 months or 100,000 km</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- Manufacturers Section -->
+<section class="manufacturers-section">
+<div class="container">
+<h2><i class="fas fa-industry" style="color:#f97316;margin-right:0.75rem;"></i>Manufacturers &amp; Brands</h2>
+<div class="manufacturers-grid">
+<div class="manufacturer-card">
+<div class="m-icon"><i class="fas fa-truck-monster"></i></div>
+<h3>Sinotruk HOWO</h3>
+<p>The HOWO T7H and T5G series are Africa's most popular tractor heads. Built on MAN TGA technology with Cummins engines and FAST transmissions. Known for reliability, parts availability across Africa, and excellent fuel economy. The 6x4 420HP HOWO is the best-selling tractor head in West Africa.</p>
+</div>
+<div class="manufacturer-card">
+<div class="m-icon"><i class="fas fa-truck-monster"></i></div>
+<h3>Shacman X3000</h3>
+<p>Shacman X3000 and X5000 series tractor heads feature MAN-derived cab design, Weichai WP13 engines (up to 540HP), and FAST 12-speed transmissions. The X3000 is prized for its spacious sleeper cab, smooth ride, and powerful engine braking — ideal for long-haul routes across Africa.</p>
+</div>
+<div class="manufacturer-card">
+<div class="m-icon"><i class="fas fa-cogs"></i></div>
+<h3>Dongfeng KL</h3>
+<p>Dongfeng's KL series offers competitive mid-range tractor heads with Yuchai engines. Excellent value for money with good fuel efficiency and reliable performance for regional transport operations.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+<div class="container">
+<h2><i class="fas fa-star" style="color:#f97316;margin-right:0.75rem;"></i>Key Features</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-engine"></i></div>
+<h3>Proven Engines</h3>
+<p>Cummins ISG/ISX and Weichai WP series engines — the most trusted heavy-duty diesel engines in Africa. Millions of units in service, easy maintenance, available spare parts.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-gas-pump"></i></div>
+<h3>Fuel Efficient</h3>
+<p>Optimized drivetrain with FAST direct-drive transmissions and Cummins/Weichai common-rail injection. Typical fuel consumption: 28-33 L/100km loaded.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-bed"></i></div>
+<h3>Driver Comfort</h3>
+<p>Sleeper cabins with A/C, air suspension driver and passenger seats, power windows, central locking, Bluetooth audio, and ample storage for long-haul operations.</p>
+</div>
+<div class="feature-card">
+<div class="f-icon"><i class="fas fa-temperature-high"></i></div>
+<h3>Heavy-Duty Cooling</h3>
+<p>Oversized radiator, intercooler, and fan clutch system designed for tropical African temperatures. No overheating even in 45&deg;C ambient conditions with full load.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+<div class="container">
+<h2>Ready to Order Your Tractor Head?</h2>
+<p>Tell us your preferred horsepower range, drive configuration, and application — we'll recommend the right Sinotruk, Shacman, or Dongfeng model at the best factory-direct price.</p>
+<div class="cta-buttons">
+<a href="https://wa.me/2348140067523" class="btn btn-secondary btn-lg" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp: +234 814 006 7523
+</a>
+<a href="mailto:chinaafricatrucks@gmail.com" class="btn btn-outline btn-lg" style="border-color:white;color:white;">
+<i class="fas fa-envelope"></i> Email Us
+</a>
+</div>
+</div>
+</section>
+
+<!-- Related Products -->
+<section class="related-section">
+<div class="container">
+<h2><i class="fas fa-th-large" style="color:#f97316;margin-right:0.75rem;"></i>Related Products</h2>
+<div class="related-grid">
+<a href="flatbed.html" class="related-card">
+<div class="r-icon" style="background:#1e40af;"><i class="fas fa-truck-flatbed"></i></div>
+<h3>Flatbed Trailers</h3>
+<p>30-60 tons &bull; Container transport &bull; 2/3-axle</p>
+</a>
+<a href="cargo.html" class="related-card">
+<div class="r-icon" style="background:#10b981;"><i class="fas fa-truck"></i></div>
+<h3>Cargo Trucks</h3>
+<p>2-40 ton payload &bull; Multiple body types</p>
+</a>
+<a href="lowbed.html" class="related-card">
+<div class="r-icon" style="background:#7c3aed;"><i class="fas fa-truck-moving"></i></div>
+<h3>Lowbed Trailers</h3>
+<p>30-100 tons &bull; Extendable &bull; Heavy equipment</p>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="../" class="logo">
+<div class="logo-icon"><i class="fas fa-truck-moving"></i></div>
+<div class="logo-text">
+<span class="logo-main">China Africa</span>
+<span class="logo-sub">Trucks</span>
+</div>
+</a>
+<p class="footer-tagline">Your trusted partner for importing quality vehicles from China to Africa.</p>
+<div class="footer-social">
+<a href="https://tiktok.com/@ChinaAfricaTrucks" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+<a href="https://wa.me/2348140067523" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="../#home">Home</a></li>
+<li><a href="../#factories">Factories</a></li>
+<li><a href="../#products">Products</a></li>
+<li><a href="../#about">About</a></li>
+<li><a href="../#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer-products">
+<h4>Products</h4>
+<ul>
+<li><a href="flatbed.html">Flatbed Trailers</a></li>
+<li><a href="lowbed.html">Lowbed Trailers</a></li>
+<li><a href="tanker.html">Tanker Trailers</a></li>
+<li><a href="dump.html">Dump Trailers</a></li>
+<li><a href="cargo.html">Cargo Trucks</a></li>
+<li><a href="tractor.html">Tractor Heads</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Contact</h4>
+<ul>
+<li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348140067523" target="_blank">+234 814 006 7523</a></li>
+<li><i class="fas fa-envelope"></i> <a href="mailto:chinaafricatrucks@gmail.com">chinaafricatrucks@gmail.com</a></li>
+<li><i class="fas fa-map-marker-alt"></i> <span>Liangshan, Shandong, China</span></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 China Africa Trucks. All rights reserved.</p>
+<div class="footer-legal">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/2348140067523" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<i class="fab fa-whatsapp"></i>
+<span class="whatsapp-tooltip">Chat with us</span>
+</a>
+
+<!-- Mobile Toggle Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var toggle = document.getElementById('mobileToggle');
+var menu = document.getElementById('navMenu');
+if (toggle && menu) {
+toggle.addEventListener('click', function() {
+menu.classList.toggle('active');
+var spans = toggle.querySelectorAll('span');
+spans.forEach(function(s) { s.classList.toggle('active'); });
+});
+}
+});
+</script>
+</body>
+</html>

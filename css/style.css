@@ -1307,18 +1307,25 @@ p {
         left: 0;
         right: 0;
         bottom: 0;
+        height: calc(100dvh - 72px);
         background: white;
         flex-direction: column;
+        justify-content: flex-start;
         padding: 2rem;
         transform: translateX(100%);
-        transition: transform var(--transition-base);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
-        display: none;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        z-index: 999;
     }
     
     .nav-menu.active {
-        display: flex;
         transform: translateX(0);
+    }
+    
+    body.menu-open {
+        overflow: hidden;
     }
     
     .nav-links {
