@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 96" role="img" aria-labelledby="title desc">
+  <title id="title">China Africa Trucks logo</title>
+  <desc id="desc">A minimal CA trade-route monogram with China Africa Trucks wordmark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="14" y1="14" x2="82" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f3a6b"/>
+      <stop offset="1" stop-color="#1e40af"/>
+    </linearGradient>
+  </defs>
+  <rect width="344" height="96" rx="18" fill="none"/>
+  <g transform="translate(14 12)">
+    <rect width="72" height="72" rx="18" fill="url(#bg)"/>
+    <path d="M46 22H34c-10 0-18 7-18 16s8 16 18 16h12" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M37 56 50 23l13 33" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 39h28" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M47 32 54 39l-7 7" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif">
+    <text x="106" y="41" font-size="26" font-weight="800" letter-spacing=".1">China Africa</text>
+    <text x="106" y="68" font-size="23" font-weight="700" fill="#1e40af" letter-spacing="1.2">TRUCKS</text>
+  </g>
+</svg>

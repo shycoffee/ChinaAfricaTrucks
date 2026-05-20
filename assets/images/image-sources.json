@@ -1,0 +1,82 @@
+{
+  "policy": "Use verified local images only in production pages. Do not hotlink factory websites because of speed, mixed-content, and anti-leeching risks.",
+  "official_sources": {
+    "tongya": [
+      "http://www.chinatongya.com/",
+      "https://www.tytrucktrailer.com/",
+      "https://www.tongyatrailers.com/"
+    ],
+    "huayu": [
+      "https://www.huayu-trailer.com/",
+      "https://www.huayuchina.cn/"
+    ]
+  },
+  "selected_images": [
+    {
+      "file": "assets/images/tiktok-hd/banner1.jpg",
+      "usage": "Homepage hero background",
+      "notes": "Wide real factory/product banner suitable for desktop hero crop."
+    },
+    {
+      "file": "assets/images/tiktok-hd/banner2.jpg",
+      "usage": "Factory and product page hero background overlay",
+      "notes": "Wide industrial banner used behind a dark brand overlay."
+    },
+    {
+      "file": "assets/images/tongya-factory.jpg",
+      "usage": "Tongya factory card and Tongya factory page",
+      "source": "http://www.chinatongya.com/uploads/image/20230801/1690873620.jpg"
+    },
+    {
+      "file": "assets/images/dump-trailer-1.jpg",
+      "usage": "Dump trailer category and product page",
+      "source": "http://www.chinatongya.com/uploads/image/20260210/1770694088.jpg"
+    },
+    {
+      "file": "assets/images/chinatongya/1565428549.jpg",
+      "usage": "Tanker category and product page",
+      "notes": "Existing Tongya tanker product image."
+    },
+    {
+      "file": "assets/images/chinatongya/1565429285.jpg",
+      "usage": "Flatbed product page",
+      "notes": "Existing Tongya flatbed product image."
+    },
+    {
+      "file": "assets/images/huayu/huayu-factory-view.png",
+      "usage": "Legacy Huayu factory image, retained but no longer used for the homepage card because the narrow crop is weak.",
+      "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/huayu-factory-hero.jpg",
+      "usage": "Huayu factory card and Huayu factory page hero",
+      "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/huayu-flatbed-1.jpg",
+      "usage": "Flatbed category and gallery",
+      "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/huayu-lowbed-1.jpg",
+      "usage": "Lowbed category and product page",
+      "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/huayu-bulk-1.jpg",
+      "usage": "Cargo/bulk category and product page",
+      "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/huayu-tanker-1.jpg",
+      "usage": "Tanker gallery and Huayu factory product card",
+      "source": "https://www.huayu-trailer.com/"
+    }
+  ],
+  "pending_images": [
+    {
+      "category": "Tractor heads",
+      "reason": "No reliable local verified tractor head image was available; current pages use a branded placeholder instead of a misleading factory photo."
+    }
+  ]
+}
