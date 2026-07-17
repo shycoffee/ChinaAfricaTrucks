@@ -13,9 +13,10 @@
   },
   "selected_images": [
     {
-      "file": "assets/images/tiktok-hd/banner1.jpg",
+      "file": "assets/images/tongya-factory-original.jpg",
       "usage": "Homepage hero background",
-      "notes": "Wide real factory/product banner suitable for desktop hero crop."
+      "source": "http://www.chinatongya.com/uploads/image/20230801/1690873620.jpg",
+      "notes": "Wide factory inventory image with real products; selected over the composited city banner."
     },
     {
       "file": "assets/images/tiktok-hd/banner2.jpg",
@@ -71,6 +72,36 @@
       "file": "assets/images/huayu/huayu-tanker-1.jpg",
       "usage": "Tanker gallery and Huayu factory product card",
       "source": "https://www.huayu-trailer.com/"
+    },
+    {
+      "file": "assets/images/huayu/2025-huayu-4axle-flatbed.jpg",
+      "usage": "Homepage 4-axle flatbed catalogue card",
+      "source_page": "https://www.huayu-trailer.com/products/four-axle-flatbed-semi-trailer.html",
+      "source": "https://image.chukouplus.com/upload/C_6843/file/20250726/b46d1701a54e80230fd75175990751d0.jpg"
+    },
+    {
+      "file": "assets/images/huayu/2025-huayu-module-lowbed.jpg",
+      "usage": "Homepage 200T modular lowbed catalogue card",
+      "source_page": "https://www.huayu-trailer.com/products/module-lowbed-semi-trailer.html",
+      "source": "https://image.chukouplus.com/upload/C_6843/file/20250802/16ccbd9876e6802764778f21bb450673.jpg"
+    },
+    {
+      "file": "assets/images/huayu/2025-huayu-side-dump.jpg",
+      "usage": "Homepage side link dump catalogue card",
+      "source_page": "https://www.huayu-trailer.com/products/link-dump-semi-trailer.html",
+      "source": "https://image.chukouplus.com/upload/C_6843/file/20250806/93a2f69b087cdfc096947222146b6c5d.jpg"
+    },
+    {
+      "file": "assets/images/huayu/2025-huayu-bulk-cement.jpg",
+      "usage": "Homepage 40CBM bulk cement catalogue card",
+      "source_page": "https://www.huayu-trailer.com/products/cement-tanker.html",
+      "source": "https://image.chukouplus.com/upload/C_6843/file/20250803/1914fbb2cc918214fa3eff37c9013e29.jpg"
+    },
+    {
+      "file": "assets/images/huayu/2025-huayu-aluminum-tanker.jpg",
+      "usage": "Homepage 45,000L aluminum tanker catalogue card",
+      "source_page": "https://www.huayu-trailer.com/products/aluminium-alloy-oil-tank-semi-trailer.html",
+      "source": "https://image.chukouplus.com/upload/C_6843/file/20250803/044498f1f3e2ad52a3ff763b83be33cb.jpg"
     }
   ],
   "pending_images": [

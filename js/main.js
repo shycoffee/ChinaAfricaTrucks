@@ -26,6 +26,7 @@ function initNavigation() {
             navMenu.classList.toggle('active');
             mobileToggle.classList.toggle('active');
             document.body.classList.toggle('menu-open');
+            mobileToggle.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
         });
         
         // Close menu when clicking on links
@@ -34,6 +35,7 @@ function initNavigation() {
                 navMenu.classList.remove('active');
                 mobileToggle.classList.remove('active');
                 document.body.classList.remove('menu-open');
+                mobileToggle.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -58,7 +60,7 @@ function initNavigation() {
  */
 function initAnimations() {
     const animatedElements = document.querySelectorAll(
-        '.factory-card, .category-card, .feature-card, .process-step, .market-item'
+        '.factory-card, .category-card, .feature-card, .process-step, .market-item, .catalog-card, .factory-profile, .service-points article'
     );
     
     const observerOptions = {
@@ -421,6 +423,8 @@ window.addEventListener('resize', debounce(() => {
         if (navMenu && mobileToggle) {
             navMenu.classList.remove('active');
             mobileToggle.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
         }
     }
 }, 250));
@@ -439,16 +443,3 @@ function preloadResources() {
 
 // Run preloads after page load
 window.addEventListener('load', preloadResources);
-
-// Service Worker Registration (for PWA capabilities)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-                console.log('SW registered:', registration.scope);
-            })
-            .catch(error => {
-                console.log('SW registration failed:', error);
-            });
-    });
-}
